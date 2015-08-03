@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WFindGarage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">搜索..</string>
+     <string name="b1">摇车房</string>
+     <string name="b2">附近车房</string>
+     <string name="b3">我的车房</string>
+          <string name="b4">联系我们</string>
+          <string name="b5">设定</string>
+               <string name="b6">排行榜</string>
+               <string name="b7">我的至爱</string>
+                    <string name="b8">最近消息</string>
+                    <string name="b9">赞FACEBOOK</string>
+                         <string name="b10">房车推广</string>
+                         <string name="b11">最新评论</string>
+                              <string name="b12">提供车房资料</string>
+                         
+</resources>

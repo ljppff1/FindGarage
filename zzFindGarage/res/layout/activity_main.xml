@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+ <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/black"
+     >
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:src="@drawable/c1"
+         android:id="@+id/mIvc1"
+         />
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:paddingRight="10dp"
+         android:layout_centerVertical="true"
+                  android:id="@+id/mIvc2"         
+         android:src="@drawable/c2"
+         />
+     </RelativeLayout>
+             <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/black"
+     >
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        		        	android:background="@drawable/search_frame"
+       android:hint="@string/search"
+	android:paddingLeft="32dp"
+		        	android:textSize="12sp"
+		        	       	android:singleLine="true"
+      	android:layout_marginRight="10dp"
+      	android:layout_marginLeft="10dp"
+        />
+    
+     
+ </RelativeLayout>
+ <View 
+          android:layout_width="fill_parent"
+     android:layout_height="10dp"
+     android:background="@color/black"
+     
+     />
+ 
+ 
+     <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="130dp"
+       >
+    <com.tianshicoffeeom.app.imgscroll.MyImgScroll
+        android:id="@+id/myvp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/vb"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+</RelativeLayout>
+<View 
+              android:layout_width="fill_parent"
+     android:layout_height="20dp"
+     android:background="@color/white"
+    
+    />
+  <GridView 
+      android:background="@color/white"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/mGvm1"
+      android:verticalSpacing="30dp"
+      android:numColumns="4"
+      ></GridView>
+</LinearLayout>
