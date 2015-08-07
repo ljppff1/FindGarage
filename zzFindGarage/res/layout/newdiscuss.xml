@@ -1,0 +1,183 @@
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+         xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="fill_parent"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+>
+
+    
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+            <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp" 
+        android:layout_marginTop="40dp"
+        android:background="@color/blue"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                 >
+                            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:text="@string/af2"
+                />
+                
+            </RelativeLayout>
+            <View 
+                android:layout_width="0.5dp"
+                android:background="@color/black"
+                android:layout_height="50dp"
+                />
+            <RelativeLayout
+                                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                 >
+            <ImageView 
+                                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                                android:layout_height="wrap_content"
+                android:src="@drawable/af1"
+                />
+                
+            </RelativeLayout>
+              <View 
+                android:layout_width="0.5dp"
+                android:background="@color/black"
+                android:layout_height="50dp"
+                />
+                 <RelativeLayout
+                                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                 >
+            <ImageView 
+                                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                                android:layout_height="wrap_content"
+                android:src="@drawable/af2"
+                />
+                
+            </RelativeLayout>
+              <View 
+                android:layout_width="0.5dp"
+                android:background="@color/black"
+                android:layout_height="50dp"
+                />
+              <RelativeLayout
+                                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                 >
+                            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:text="@string/af3"
+                />
+                
+            </RelativeLayout>
+         
+            </LinearLayout>
+        </RelativeLayout>
+        
+        
+        <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/ttb5"
+    >
+         <ImageView
+       android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:id="@+id/mIvtt1"
+         android:src="@drawable/ee1"
+         android:layout_centerVertical="true"
+         android:paddingLeft="5dp"
+             />
+        <ImageView
+       android:layout_width="34dp"
+        android:layout_height="34dp"
+         android:src="@drawable/ee2"
+         android:paddingRight="5dp"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+       
+             />
+        
+        <TextView 
+                    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:drawableBottom="@drawable/ttb4"
+            android:text="@string/af1"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+        
+    </RelativeLayout>
+       <RelativeLayout 
+           android:layout_width="fill_parent"
+             android:layout_height="30dp"
+           android:background="@color/gray1"
+           >
+                    <TextView 
+                    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="@string/af4"
+            android:textColor="@color/blue"
+            />
+
+       </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+                 <ListView 
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:id="@+id/mLv1"
+     ></ListView>
+            <ProgressBar
+            android:id="@+id/progressBar_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+                
+            </RelativeLayout>
+            
+</LinearLayout>
+
+
+</RelativeLayout>

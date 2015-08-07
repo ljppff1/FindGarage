@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+>
+
+    
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <ScrollView 
+                         android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:fillViewport="true"
+             android:layout_marginTop="40dp"
+             android:id="@+id/mSvmy1"
+            >
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+             <RelativeLayout 
+                              android:layout_width="fill_parent"
+             android:layout_height="130dp"
+                              android:id="@+id/mRlmy2"
+                 
+                 >
+        <RelativeLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="130dp"
+                                           android:id="@+id/mRlmy1"
+             
+             android:visibility="gone"
+             >
+             <ImageView 
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:src="@drawable/a"
+                 />
+             <ImageView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/aaa1"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="10dp"
+                 />
+             
+         </RelativeLayout>
+               </RelativeLayout>
+        
+         <com.example.view.MyGridView 
+             android:layout_below="@id/mRlmy2"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:id="@+id/mGvMy1"
+             android:numColumns="2"
+             ></com.example.view.MyGridView>
+                     <ProgressBar
+            android:id="@+id/progressBar_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+                
+            </RelativeLayout>
+         
+        </ScrollView>
+        <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/ttb5"
+    >
+         <ImageView
+       android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:id="@+id/mIvtt1"
+         android:src="@drawable/ee1"
+         android:layout_centerVertical="true"
+         android:paddingLeft="5dp"
+             />
+        <ImageView
+       android:layout_width="34dp"
+        android:layout_height="34dp"
+         android:src="@drawable/ee2"
+         android:paddingRight="5dp"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+       
+             />
+        
+        <TextView 
+                    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:drawableBottom="@drawable/ttb4"
+            android:text="@string/ad8"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+        
+        
+         
+        
+        
+        
+    </RelativeLayout>
+    
+         
+            
+            
+            
+         
+</LinearLayout>
