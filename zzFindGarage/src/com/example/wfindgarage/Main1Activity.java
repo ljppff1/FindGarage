@@ -6,19 +6,13 @@ import com.tianshicoffeeom.app.imgscroll.MyImgScroll;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -31,10 +25,12 @@ public class Main1Activity extends Activity {
 	private MyImgScroll myPager;
 	private LinearLayout ovalLayout;
 	private ArrayList<View> listViews;
-	private GridView mGvm1;
     private int[] a ={R.string.b1,R.string.b2,R.string.b3,R.string.b4,R.string.b5,R.string.b6,R.string.b7,R.string.b8,R.string.b9,R.string.b10,R.string.b11,R.string.b12,};
-    private int[] b ={R.drawable.bb1,R.drawable.bb2,R.drawable.bb3,R.drawable.bb4,R.drawable.bb5,R.drawable.bb6,R.drawable.bb7,R.drawable.bb8,R.drawable.bb9,R.drawable.bb10,R.drawable.bb11,R.drawable.bb12};
+    private int[] b ={R.drawable.bb1,R.drawable.bb2,R.drawable.bb3,R.drawable.bb4,R.drawable.bb5,R.drawable.bb6};
+    private int[] b1 ={R.drawable.bb7,R.drawable.bb8,R.drawable.bb9,R.drawable.bb10,R.drawable.bb11,R.drawable.bb12};
 	private Myadapter adapter;
+	private com.example.view.HorizontalListViewAdapter hListViewAdapter;
+	private com.example.view.HorizontalListView hListView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
@@ -51,8 +47,13 @@ public class Main1Activity extends Activity {
 		myPager.start(Main1Activity.this, listViews, 4000, ovalLayout,
 				R.layout.ad_bottom_item, R.id.ad_item_v,
 				R.drawable.dot_focused, R.drawable.dot_normal);
-		mGvm1 =(GridView)this.findViewById(R.id.mGvm1);
-		mGvm1.setOnItemClickListener(new OnItemClickListener() {
+		hListView = (com.example.view.HorizontalListView)findViewById(R.id.horizon_listview);
+		String[] titles = {"摇车房", "附近车房", "我的车房", "联系我们", "设定", "排行榜"};
+		String[] titles1 ={"我的至爱","最近消息","赞FACEBOOK","房车推广","最新评论","提供车房资料"};
+		hListViewAdapter = new com.example.view.HorizontalListViewAdapter(getApplicationContext(),titles,b,titles1,b1);
+		hListView.setAdapter(hListViewAdapter);
+
+		/*mGvm1.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
@@ -94,7 +95,7 @@ public class Main1Activity extends Activity {
 			}
 		});
 		adapter= new Myadapter();
-		mGvm1.setAdapter(adapter);
+		mGvm1.setAdapter(adapter);*/
 		
 	}
 	class Holder{

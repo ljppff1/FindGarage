@@ -576,6 +576,8 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
+        public static final int thumnail_default_height=0x7f050003;
+        public static final int thumnail_default_width=0x7f050002;
     }
     public static final class drawable {
         public static final int a=0x7f020000;
@@ -679,40 +681,45 @@ public final class R {
     }
     public static final class id {
         public static final int ad_item_v=0x7f080005;
-        public static final int iv_listview_rent_pic=0x7f080010;
-        public static final int mGvMy1=0x7f080023;
-        public static final int mGvm1=0x7f080004;
-        public static final int mIv1=0x7f08001b;
+        public static final int horizon_listview=0x7f080004;
+        public static final int img_list_item=0x7f080010;
+        public static final int img_list_item1=0x7f080012;
+        public static final int iv_listview_rent_pic=0x7f080014;
+        public static final int mGvMy1=0x7f080028;
+        public static final int mIv1=0x7f08001f;
         public static final int mIv12=0x7f08000d;
         public static final int mIv13=0x7f08000e;
-        public static final int mIv1a=0x7f08001f;
+        public static final int mIv1a=0x7f080023;
         public static final int mIvc1=0x7f080000;
         public static final int mIvc2=0x7f080001;
-        public static final int mIvright=0x7f080015;
+        public static final int mIvright=0x7f080019;
         public static final int mIvtt1=0x7f080006;
-        public static final int mLL1=0x7f08001c;
-        public static final int mLLjc1=0x7f08001d;
-        public static final int mLLjc1a=0x7f080020;
+        public static final int mLL1=0x7f080020;
+        public static final int mLLjc1=0x7f080021;
+        public static final int mLLjc1a=0x7f080024;
         public static final int mLv1=0x7f080008;
-        public static final int mRL_listview_rent_2=0x7f080013;
-        public static final int mRl13=0x7f08001e;
-        public static final int mRlJJ1=0x7f080019;
-        public static final int mRlJJ2=0x7f08001a;
-        public static final int mRll31=0x7f080016;
-        public static final int mRlmy1=0x7f080022;
-        public static final int mRlmy2=0x7f080021;
+        public static final int mRL_listview_rent_2=0x7f080017;
+        public static final int mRl13=0x7f080022;
+        public static final int mRlJJ1=0x7f08001d;
+        public static final int mRlJJ2=0x7f08001e;
+        public static final int mRll31=0x7f08001a;
+        public static final int mRlmy1=0x7f080027;
+        public static final int mRlmy2=0x7f080026;
+        public static final int mSvmy1=0x7f080025;
         public static final int mTvae1=0x7f080007;
-        public static final int mTvri10=0x7f080014;
-        public static final int mTvri11=0x7f080012;
-        public static final int mTvri12=0x7f080011;
-        public static final int mTvri14=0x7f080017;
-        public static final int mTvri15=0x7f080018;
+        public static final int mTvri10=0x7f080018;
+        public static final int mTvri11=0x7f080016;
+        public static final int mTvri12=0x7f080015;
+        public static final int mTvri14=0x7f08001b;
+        public static final int mTvri15=0x7f08001c;
         public static final int myvp=0x7f080002;
         public static final int progressBar_sale=0x7f080009;
         public static final int rb1=0x7f08000b;
         public static final int rb2=0x7f08000c;
-        public static final int rb3=0x7f080024;
+        public static final int rb3=0x7f080029;
         public static final int rg1=0x7f08000a;
+        public static final int text_list_item=0x7f080011;
+        public static final int text_list_item1=0x7f080013;
         public static final int vb=0x7f080003;
         public static final int vp1=0x7f08000f;
     }
@@ -723,21 +730,22 @@ public final class R {
         public static final int fragment1a=0x7f030003;
         public static final int fragment1b=0x7f030004;
         public static final int fujinchefang=0x7f030005;
-        public static final int item_gridview_1=0x7f030006;
-        public static final int item_gridview_2=0x7f030007;
-        public static final int item_listview_1=0x7f030008;
-        public static final int item_listview_2=0x7f030009;
-        public static final int item_listview_3=0x7f03000a;
-        public static final int item_listview_4=0x7f03000b;
-        public static final int jianjiechefang=0x7f03000c;
-        public static final int jianjiechefangtest=0x7f03000d;
-        public static final int meiyuepaihang=0x7f03000e;
-        public static final int myziliao=0x7f03000f;
-        public static final int newdiscuss=0x7f030010;
-        public static final int newnotice=0x7f030011;
-        public static final int search_yaoche=0x7f030012;
-        public static final int splish=0x7f030013;
-        public static final int ziliaochefang=0x7f030014;
+        public static final int horizontal_list_item=0x7f030006;
+        public static final int item_gridview_1=0x7f030007;
+        public static final int item_gridview_2=0x7f030008;
+        public static final int item_listview_1=0x7f030009;
+        public static final int item_listview_2=0x7f03000a;
+        public static final int item_listview_3=0x7f03000b;
+        public static final int item_listview_4=0x7f03000c;
+        public static final int jianjiechefang=0x7f03000d;
+        public static final int jianjiechefangtest=0x7f03000e;
+        public static final int meiyuepaihang=0x7f03000f;
+        public static final int myziliao=0x7f030010;
+        public static final int newdiscuss=0x7f030011;
+        public static final int newnotice=0x7f030012;
+        public static final int search_yaoche=0x7f030013;
+        public static final int splish=0x7f030014;
+        public static final int ziliaochefang=0x7f030015;
     }
     public static final class string {
         public static final int ab1=0x7f06002c;

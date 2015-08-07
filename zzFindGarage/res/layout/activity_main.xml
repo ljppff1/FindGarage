@@ -44,10 +44,15 @@
      
      />
  
- 
+ <LinearLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     >
      <RelativeLayout 
        android:layout_width="fill_parent"
-       android:layout_height="130dp"
+       android:layout_height="0dp"
+       android:layout_weight="1"
        >
     <com.tianshicoffeeom.app.imgscroll.MyImgScroll
         android:id="@+id/myvp"
@@ -64,18 +69,18 @@
         android:orientation="horizontal" >
     </LinearLayout>
 </RelativeLayout>
-<View 
-              android:layout_width="fill_parent"
-     android:layout_height="20dp"
-     android:background="@color/white"
-    
-    />
-  <GridView 
-      android:background="@color/white"
-      android:layout_width="fill_parent"
-      android:layout_height="fill_parent"
-      android:id="@+id/mGvm1"
-      android:verticalSpacing="30dp"
-      android:numColumns="4"
-      ></GridView>
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       >
+      <com.example.view.HorizontalListView
+        android:id="@+id/horizon_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+    </com.example.view.HorizontalListView>
+    </RelativeLayout>
+</LinearLayout>
 </LinearLayout>
