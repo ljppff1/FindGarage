@@ -28,6 +28,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.wfindgarage.JianJiechefangActivity"></activity>
+        <activity android:name="com.example.wfindgarage.SearchYaocheActivity"></activity>
+        <activity android:name="com.example.wfindgarage.ZiliaochefangActivity"></activity>
+        <activity android:name="com.example.wfindgarage.chefangActivity"></activity>
+        <activity android:name="com.example.wfindgarage.NewNoticeActivity"></activity>
+        <activity android:name="com.example.wfindgarage.NewDiscussActivity"></activity>
+        <activity android:name="com.example.wfindgarage.MyZiliaoActivity"></activity>
+        <activity android:name="com.example.wfindgarage.fujinchefangActivity"></activity>
+        <activity android:name="com.example.wfindgarage.MeiYuePaiHangActivity"></activity>
+        
     </application>
 
 </manifest>

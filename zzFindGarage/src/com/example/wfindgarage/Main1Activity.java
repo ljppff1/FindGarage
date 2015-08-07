@@ -6,6 +6,7 @@ import com.tianshicoffeeom.app.imgscroll.MyImgScroll;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -14,6 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -49,6 +52,47 @@ public class Main1Activity extends Activity {
 				R.layout.ad_bottom_item, R.id.ad_item_v,
 				R.drawable.dot_focused, R.drawable.dot_normal);
 		mGvm1 =(GridView)this.findViewById(R.id.mGvm1);
+		mGvm1.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				switch (position) {
+				case 0:
+					startActivity(new Intent(getApplicationContext(), SearchYaocheActivity.class));
+					break;
+				case 1:
+					startActivity(new Intent(getApplicationContext(), JianJiechefangActivity.class));
+					break;
+				case 2:
+					startActivity(new Intent(getApplicationContext(), chefangActivity.class));
+					break;
+				case 3:
+					startActivity(new Intent(getApplicationContext(), NewNoticeActivity.class));
+					break;
+				case 4:
+					startActivity(new Intent(getApplicationContext(), NewDiscussActivity.class));
+					break;
+				case 5:
+					startActivity(new Intent(getApplicationContext(), fujinchefangActivity.class));
+					break;
+				case 6:
+					startActivity(new Intent(getApplicationContext(), MyZiliaoActivity.class));
+					break;
+				case 7:
+					startActivity(new Intent(getApplicationContext(), MeiYuePaiHangActivity.class));
+					break;
+				case 11:
+					startActivity(new Intent(getApplicationContext(), ZiliaochefangActivity.class));
+     
+					
+					break;
+
+				default:
+					break;
+				}
+			}
+		});
 		adapter= new Myadapter();
 		mGvm1.setAdapter(adapter);
 		
