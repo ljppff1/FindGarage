@@ -59,13 +59,14 @@ public class NewNoticeActivity extends FragmentActivity {
 	private RadioButton rb3;
 	private ArrayList<Fragment> list;
 	private ImageView mIvtt1;
-	private ListView mLv1;
+	private com.example.view.MyListView mLv1;
 	private ProgressBar progressBar_sale;
 	private Myadapter myadapter;
 	private DisplayImageOptions options;
 	private ArrayList<Data> mDataList_origin=new ArrayList<NewNoticeActivity.Data>();
 	private ArrayList<Data> mDataList=new ArrayList<NewNoticeActivity.Data>();
 	protected ImageLoader imageLoader = ImageLoader.getInstance();
+	private ImageView mIvNn1;
 
 	@SuppressLint("ResourceAsColor")
 	@Override
@@ -75,12 +76,14 @@ public class NewNoticeActivity extends FragmentActivity {
 		setContentView(R.layout.newnotice);
 		mIvtt1 =(ImageView)this.findViewById(R.id.mIvtt1);
 		mIvtt1.setOnClickListener(listener);
-		mLv1 =(ListView)this.findViewById(R.id.mLv1);
+		mLv1 =(com.example.view.MyListView)this.findViewById(R.id.mLv1);
+		mLv1.setFocusable(false);
 		initData();
 		progressBar_sale =(ProgressBar)this.findViewById(R.id.progressBar_sale);
 		progressBar_sale.setVisibility(View.VISIBLE);
-
 		
+		mIvNn1 =(ImageView)this.findViewById(R.id.mIvNn1);
+		mIvNn1.setVisibility(View.GONE);
 		
 	}
 	
@@ -118,7 +121,9 @@ public class NewNoticeActivity extends FragmentActivity {
 								 mDataList_origin.clear();
 								 JSONArray array = jsonObject.getJSONArray("data");
 								  for (int i = 0; i < array.length(); i++) {
-									  
+									  if(i>40){
+										  break;
+									  }
 									  Data  data=new Data();
 									  
 									 JSONObject jsonObject2 = array.getJSONObject(i);
@@ -137,6 +142,7 @@ public class NewNoticeActivity extends FragmentActivity {
 								  mDataList.clear();
 								  mDataList.addAll(mDataList_origin);
 									progressBar_sale.setVisibility(View.GONE);
+									mIvNn1.setVisibility(View.VISIBLE);
 								  initListView();
 							}
 							 else {

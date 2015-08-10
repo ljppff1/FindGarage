@@ -127,7 +127,10 @@ public class MeiYuePaiHangActivity extends Activity {
 								 mDataList_origin.clear();
 								 JSONArray array = jsonObject.getJSONArray("data");
 								  for (int i = 0; i < array.length(); i++) {
-									  
+									  if(i>50){
+										  break;
+									  }
+
 									  Data  data=new Data();
 									  
 									 JSONObject jsonObject2 = array.getJSONObject(i);

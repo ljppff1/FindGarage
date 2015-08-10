@@ -6,15 +6,55 @@
         android:layout_height="fill_parent"
         >
 
+        
+        <RelativeLayout 
+            android:id="@+id/mRlNn3"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/ab8"
+    >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        >
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ab2"
+            />
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ab3"
+            />
+                <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ab4"
+            />
+                <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ab5"
+            />
+                
+        </LinearLayout>
+        
+</RelativeLayout>
+       
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_above="@id/mRlNn3"
     android:orientation="vertical" 
 >
-
-    
-    
-    
     <RelativeLayout 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -80,14 +120,27 @@
     </RelativeLayout>
         
     </RelativeLayout>
+    
+    
+     <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+    
        <RelativeLayout 
            android:layout_width="fill_parent"
              android:layout_height="140dp"
-           
+           android:id="@+id/mRlNn1"
            >
                     <ImageView 
              android:layout_width="fill_parent"
-             android:layout_height="fill_parent"
+             android:layout_height="140dp"
+             android:visibility="gone"
+             android:id="@+id/mIvNn1"
              android:src="@drawable/ab6"
              />
            
@@ -95,12 +148,13 @@
             <RelativeLayout 
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:layout_below="@id/mRlNn1"
                 >
-                 <ListView 
+                 <com.example.view.MyListView 
      android:layout_width="fill_parent"
      android:layout_height="fill_parent"
      android:id="@+id/mLv1"
-     ></ListView>
+     ></com.example.view.MyListView>
             <ProgressBar
             android:id="@+id/progressBar_sale"
             android:layout_width="wrap_content"
@@ -110,45 +164,19 @@
                 
             </RelativeLayout>
             
+          </RelativeLayout>
+          </ScrollView>  
+            
+            
+            
+            
 </LinearLayout>
-<RelativeLayout 
-    android:layout_width="fill_parent"
-    android:layout_height="55dp"
-    android:layout_alignParentBottom="true"
-    android:background="@drawable/ab8"
-    >
-    <LinearLayout 
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:orientation="horizontal"
-        >
-        <ImageView 
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ab2"
-            />
-        <ImageView 
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ab3"
-            />
-                <ImageView 
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ab4"
-            />
-                <ImageView 
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ab5"
-            />
-                
-        </LinearLayout>
-</RelativeLayout>
+
+
+
+
+
+
+
 
 </RelativeLayout>
