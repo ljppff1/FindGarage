@@ -22,6 +22,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -47,6 +48,7 @@ public class fujinchefangActivity extends FragmentActivity {
 		rb2 = (RadioButton) this.findViewById(R.id.rb2);
 		mIvtt1 =(ImageView)this.findViewById(R.id.mIvtt1);
 		mIvtt1.setOnClickListener(listener);
+
 		vp=(ViewPager)this.findViewById(R.id.vp1);
 		list = new ArrayList<Fragment>();
 		 fa=new FragmentFJ1a();
@@ -69,7 +71,6 @@ public class fujinchefangActivity extends FragmentActivity {
 			}
 		});
 		rb1.setChecked(true);
-		rb1.setBackgroundColor(R.color.yellow);
 
 	}
 	OnClickListener listener =new  OnClickListener() {

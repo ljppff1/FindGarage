@@ -48,8 +48,9 @@ public class Main1Activity extends Activity {
 				R.layout.ad_bottom_item, R.id.ad_item_v,
 				R.drawable.dot_focused, R.drawable.dot_normal);
 		hListView = (com.example.view.HorizontalListView)findViewById(R.id.horizon_listview);
-		String[] titles = {"摇车房", "附近车房", "我的车房", "联系我们", "设定", "排行榜"};
-		String[] titles1 ={"我的至爱","最近消息","赞FACEBOOK","房车推广","最新评论","提供车房资料"};
+	
+		String[] titles = {"車房搜尋", "附近車房", "提供車房資料", "聯系我們", "設定", "排行榜"};
+		String[] titles1 ={"我的車房","推廣優惠","FACEBOOK專業","房車推廣","最新評論","汽車誌"};
 		hListViewAdapter = new com.example.view.HorizontalListViewAdapter(getApplicationContext(),titles,b,titles1,b1);
 		hListView.setAdapter(hListViewAdapter);
 
@@ -107,8 +108,6 @@ public class Main1Activity extends Activity {
 		@SuppressLint("NewApi")
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-			        
-			
 			Holder holder = null;
 			if(convertView==null){
 				convertView = LayoutInflater.from(Main1Activity.this)

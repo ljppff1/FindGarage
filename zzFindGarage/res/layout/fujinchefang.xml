@@ -34,7 +34,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="fill_parent"
                     android:layout_weight="1.0"
-                    android:background="@color/blue"
+                    android:background="@drawable/radio_group_selector"
                     android:button="@null"
                     android:checked="true"
                     android:gravity="center"
@@ -51,7 +51,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="fill_parent"
                     android:layout_weight="1.0"
-                    android:background="@color/blue"
+                    android:background="@drawable/radio_group_selector"
                     android:button="@null"
                     android:gravity="center"
                     android:text="@string/af9"
@@ -108,12 +108,14 @@
     </RelativeLayout>
     
          
-            
-            <android.support.v4.view.ViewPager
+          
+                            <android.support.v4.view.ViewPager
             android:id="@+id/vp1"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" />
-            
+                
+                         
+              
          
 </LinearLayout>
 <RelativeLayout 

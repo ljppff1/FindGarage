@@ -37,6 +37,11 @@
         <activity android:name="com.example.wfindgarage.MyZiliaoActivity"></activity>
         <activity android:name="com.example.wfindgarage.fujinchefangActivity"></activity>
         <activity android:name="com.example.wfindgarage.MeiYuePaiHangActivity"></activity>
+        <activity android:name="com.example.wfindgarage.huiyuandengluActivity"></activity>
+        <activity android:name="com.example.wfindgarage.LianxiwomenActivity"></activity>
+        <activity android:name="com.example.wfindgarage.tuiguangyouhuiActivity"></activity>
+        <activity android:name="com.example.wfindgarage.TuiDetailActivity"></activity>
+        <activity android:name="com.example.wfindgarage.WoDeCheFangActivity"></activity>
         
     </application>
 

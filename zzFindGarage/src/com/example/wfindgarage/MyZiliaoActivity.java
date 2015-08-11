@@ -45,6 +45,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
@@ -53,6 +54,8 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 public class MyZiliaoActivity extends Activity {
 
 	private ImageView mIvtt1;
+
+	private RelativeLayout mRlmz1;
 	
 	@SuppressLint("ResourceAsColor")
 	@Override
@@ -62,8 +65,9 @@ public class MyZiliaoActivity extends Activity {
 		setContentView(R.layout.myziliao);
 		mIvtt1 =(ImageView)this.findViewById(R.id.mIvtt1);
 		mIvtt1.setOnClickListener(listener);
-		
-		
+		mRlmz1 =(RelativeLayout)this.findViewById(R.id.mRlmz1);
+		mRlmz1.setOnClickListener(listener);
+
 		
 	}
 	
@@ -78,6 +82,9 @@ public class MyZiliaoActivity extends Activity {
 			switch (v.getId()) {
 			case R.id.mIvtt1:
 				finish();
+				break;
+			case R.id.mRlmz1:
+				startActivity(new Intent(getApplicationContext(), huiyuandengluActivity.class));
 				break;
 
 			default:
