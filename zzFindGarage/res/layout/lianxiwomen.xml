@@ -1,0 +1,259 @@
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+         xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="fill_parent"
+        
+        >
+
+        
+        <RelativeLayout 
+            android:id="@+id/mRlNn3"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/ab8"
+    >
+ 
+</RelativeLayout>
+       <ScrollView 
+               android:layout_above="@id/mRlNn3"
+    android:background="@color/myloginb"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:fillViewport="true"
+           >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+            <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/myloginb"
+        >
+        
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+     <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="60dp"
+     android:paddingTop="8dp"
+     android:paddingBottom="8dp"
+     android:background="@color/myloginb"
+     >
+     <TextView 
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:textSize="22sp"
+         android:textColor="@color/black"
+         
+         android:layout_gravity="center"
+         android:layout_marginLeft="6dp"
+         android:text="@string/bz2"
+         />
+          <TextView 
+         android:layout_width="0dp"
+         android:layout_weight="2.5"
+         android:layout_height="wrap_content"
+          android:gravity="right"
+         android:textSize="13sp"
+         android:paddingRight="20dp"
+         android:textColor="@color/black"
+         android:layout_gravity="center"
+         android:layout_marginLeft="6dp"
+         android:text="@string/bz3"
+         />
+ </LinearLayout>
+                          <View 
+     android:layout_width="fill_parent"
+     android:layout_height="0.5dp"
+     android:background="@color/black"
+     />
+                               <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="60dp"
+     android:paddingTop="8dp"
+     android:paddingBottom="8dp"
+     android:background="@color/myloginb"
+     >
+     <TextView 
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:textSize="22sp"
+         android:textColor="@color/black"
+         
+         android:layout_gravity="center"
+         android:layout_marginLeft="6dp"
+         android:text="@string/bz4"
+         />
+          <TextView 
+         android:layout_width="0dp"
+         android:layout_weight="2.5"
+         android:layout_height="wrap_content"
+          android:gravity="right"
+         android:textSize="13sp"
+         android:paddingRight="20dp"
+         android:textColor="@color/black"
+         android:layout_gravity="center"
+         android:layout_marginLeft="6dp"
+         android:text="@string/bz5"
+         />
+ </LinearLayout>
+                          <View 
+     android:layout_width="fill_parent"
+     android:layout_height="0.5dp"
+     android:background="@color/black"
+     />
+                 <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="60dp"
+     android:paddingTop="8dp"
+     android:paddingBottom="8dp"
+     android:background="@color/myloginb"
+     >
+     <TextView 
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:textSize="22sp"
+         android:textColor="@color/black"
+         
+         android:layout_gravity="center"
+         android:layout_marginLeft="6dp"
+         android:text="@string/bz6"
+         />
+          <TextView 
+         android:layout_width="0dp"
+         android:layout_weight="2.5"
+         android:layout_height="wrap_content"
+          android:gravity="right"
+         android:textSize="13sp"
+         android:paddingRight="20dp"
+         android:textColor="@color/black"
+         android:layout_gravity="center"
+         android:layout_marginLeft="6dp"
+         android:text="@string/bz7"
+         />
+ </LinearLayout>
+                          <View 
+     android:layout_width="fill_parent"
+     android:layout_height="0.5dp"
+     android:background="@color/black"
+     />
+             <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="60dp"
+     android:paddingTop="8dp"
+     android:paddingBottom="8dp"
+     android:background="@color/myloginb"
+     >
+     <TextView 
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:textSize="22sp"
+         android:textColor="@color/black"
+         
+         android:layout_gravity="center"
+         android:layout_marginLeft="6dp"
+         android:text="@string/bz8"
+         />
+          <TextView 
+         android:layout_width="0dp"
+         android:layout_weight="2.5"
+         android:layout_height="wrap_content"
+          android:gravity="right"
+         android:textSize="13sp"
+         android:paddingRight="20dp"
+         android:textColor="@color/black"
+         android:layout_gravity="center"
+         android:layout_marginLeft="6dp"
+         android:text="@string/bz9"
+         />
+ </LinearLayout>
+                          <View 
+     android:layout_width="fill_parent"
+     android:layout_height="0.5dp"
+     android:background="@color/black"
+     />
+                        <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/myloginb"
+     android:layout_margin="5dp"
+     >  
+                     <Button 
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/bz11"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@+id/ui_login_btn"
+                    android:background="@color/myradio2"
+                    />     
+                          
+                  </RelativeLayout>        
+                          
+                          
+     </LinearLayout>
+        </RelativeLayout>
+      
+        
+        <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/ttb5"
+    >
+         <ImageView
+       android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:id="@+id/mIvtt1"
+         android:src="@drawable/ee1"
+         android:layout_centerVertical="true"
+         android:paddingLeft="5dp"
+             />
+        
+        <TextView 
+                    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:drawableBottom="@drawable/ttb4"
+            android:text="@string/bz1"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    
+      
+            
+            
+            
+</LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

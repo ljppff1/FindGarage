@@ -18,6 +18,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
@@ -50,6 +51,31 @@ public class fujinchefangActivity extends FragmentActivity {
 		mIvtt1.setOnClickListener(listener);
 
 		vp=(ViewPager)this.findViewById(R.id.vp1);
+	    vp.setOnPageChangeListener(new OnPageChangeListener() {
+			
+			@Override
+			public void onPageSelected(int arg0) {
+				if (arg0==0) {
+		             rb1.setChecked(true);
+					}
+					if(arg0==1){
+						rb2.setChecked(true);
+					}
+			}
+			
+			@Override
+			public void onPageScrolled(int arg0, float arg1, int arg2) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onPageScrollStateChanged(int arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+
 		list = new ArrayList<Fragment>();
 		 fa=new FragmentFJ1a();
 		 fb=new FragmentFJ1b();
