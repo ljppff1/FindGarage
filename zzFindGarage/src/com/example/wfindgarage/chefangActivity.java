@@ -53,7 +53,7 @@ public class chefangActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.chefang);
+		setContentView(R.layout.aatest);
 		mLLCf1 =(LinearLayout)this.findViewById(R.id.mLLCf1);
 		mLLCf2 =(LinearLayout)this.findViewById(R.id.mLLCf2);
 		
