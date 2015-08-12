@@ -8,36 +8,13 @@
              
              >
 
-  <LinearLayout 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" 
->
-
+ 
     
     
-    
-    <RelativeLayout 
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        >
-        
-            <RelativeLayout 
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        >
-     <ImageView 
-         android:layout_width="fill_parent"
-         android:layout_height="90dp"
-         android:src="@drawable/ae21"
-         />        
-        </RelativeLayout>
-        
-        
-        <RelativeLayout 
+                <RelativeLayout 
     android:layout_width="fill_parent"
     android:layout_height="50dp"
+    android:id="@+id/mRlCfc2"
     android:background="@drawable/ttb5"
     >
          <ImageView
@@ -68,17 +45,106 @@
             android:textColor="@color/white"
             />
     </RelativeLayout>
+         <RelativeLayout 
+      android:layout_width="wrap_content"
+      android:background="@drawable/ae14"
+      android:layout_marginLeft="70dp"
+      android:layout_marginRight="70dp"
+      android:id="@+id/mRlcf1"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_height="48dp"
+      >
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+             >
+             <ImageView 
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ae15"
+                 />
+             <ImageView 
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ae16"
+                 />
+                          <ImageView 
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ae17"
+                 />
+                          <ImageView 
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ae18"
+                 />
+             </LinearLayout>
+    
+  </RelativeLayout>
+    <ImageView 
+                           android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:src="@drawable/ae20"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="8dp"
+          
+          
+          />
+                
         
-    </RelativeLayout>
-     <RelativeLayout 
+        
+       <com.example.view.StickyScrollView
+            android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_above="@id/mRlcf1"
+    android:fillViewport="true"
+     android:layout_below="@id/mRlCfc2"
+    android:layout_height="fill_parent" 
+           >
+      
+     <LinearLayout 
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
+         
+        android:orientation="vertical"
+         >
+            <RelativeLayout 
+                 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+     <ImageView 
+         android:layout_width="fill_parent"
+         android:layout_height="90dp"
+         android:scaleType="fitXY"
+         android:id="@+id/mIvcf1"
+         android:src="@drawable/ae21"
+         />        
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_below="@id/mIvcf1"
+             >
+                  <RelativeLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="78dp"
          android:background="@drawable/ae22"
          android:paddingLeft="8dp"
          >
          <TextView 
              android:layout_width="fill_parent"
-             android:layout_height="wrap_content"
+             android:layout_height="28dp"
              android:textSize="20sp"
                           android:textColor="@color/black"
              
@@ -86,11 +152,17 @@
              android:layout_marginTop="8dp"
              android:text="@string/ae1"
              />
+                      <View 
+                 android:layout_width="fill_parent"
+                 android:layout_height="8dp"
+                 android:layout_below="@id/mTvae1"
+                 />
+         
          <LinearLayout 
              android:layout_width="fill_parent"
-             android:layout_height="wrap_content"
-                          android:layout_marginTop="8dp"
+             android:layout_height="34dp"
              android:layout_below="@id/mTvae1"
+             android:id="@+id/mLLcfc1"
              android:orientation="horizontal"
              >
              <ImageView 
@@ -109,54 +181,115 @@
                  android:src="@drawable/ae3"
                  />
              </LinearLayout>
+             <View 
+                 android:layout_width="fill_parent"
+                 android:layout_height="8dp"
+                 android:layout_below="@id/mLLcfc1"
+                 />
      </RelativeLayout>
-        <LinearLayout 
+             <FrameLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="50dp"
             android:background="@color/blue"
-            android:padding="3dp"
-            >
-            <Button 
-                android:layout_width="0dp"
-                android:text="@string/ae2"
-                             android:textSize="20sp"
-                                             android:layout_marginLeft="1.5dp"
-                android:layout_marginRight="1.5dp"
+            android:tag="sticky" >
+
+               <RadioGroup
+                android:id="@+id/rg1cf"
+                 android:padding="3dp"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@color/blue"
+                android:orientation="horizontal" >
+                  
+                           <View 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue"
+                    />
                              
-                          android:textColor="@color/black"
-             android:gravity="center"
-                android:layout_weight="1"
-                android:layout_height="40dp"
-                android:background="@drawable/ae4"
-                />
-            <Button 
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="1.5dp"
-                android:layout_marginRight="1.5dp"
-                                android:text="@string/ae3"
-                             android:textSize="20sp"
-                          android:textColor="@color/black"
+                <RadioButton
+                    android:id="@+id/rb1cf"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/radio_group_selector"
+                    android:button="@null"
+                    android:checked="true"
                     android:gravity="center"
-                android:layout_height="40dp"
-                android:background="@drawable/ae5"
-                />
-                        <Button 
-                android:layout_width="0dp"
-                                android:layout_marginLeft="1.5dp"
-                android:layout_marginRight="1.5dp"
-                
-                                android:text="@string/ae4"
-                             android:textSize="20sp"
-                          android:textColor="@color/black"
+                    android:text="@string/ae2"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+                <View 
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue"
+                    />
+                <RadioButton
+                    android:id="@+id/rb2cf"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/radio_group_selector"
+                    android:button="@null"
                     android:gravity="center"
-                android:layout_weight="1"
-                android:layout_height="40dp"
-                android:background="@drawable/ae5"
-                />
-            
-        </LinearLayout>
+                    android:text="@string/ae3"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" /> 
+                           <View 
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue"
+                    />
+                                      <RadioButton
+                    android:id="@+id/rb3cf"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/radio_group_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/ae4"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" /> 
+                           
+                                           <View 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue"
+                    />
+                                      
+            </RadioGroup>
+        </FrameLayout>
+                  
+                  
+                      
+        
+                  
+           <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:id="@+id/mLLCf2"
+    android:visibility="gone"
+>
+                <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="20sp"
+               android:textColor="@color/black"
+             android:layout_centerInParent="true"
+             android:text="@string/test"
+             />                            
+                         </LinearLayout>
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:id="@+id/mLLCf1"
+>
          <RelativeLayout 
              android:layout_width="fill_parent"
              android:layout_height="wrap_content"
@@ -177,11 +310,6 @@
              />
              </RelativeLayout>
          </RelativeLayout>
-         <ScrollView 
-             android:layout_width="fill_parent"
-             android:layout_height="wrap_content"
-             android:fillViewport="true"
-             >
          <LinearLayout 
              android:layout_width="fill_parent"
              android:layout_height="wrap_content"
@@ -348,67 +476,19 @@
                                   android:layout_centerVertical="true"
              
                android:textColor="@color/black"
-             android:text="@string/ae6"
+             android:text="@string/test"
              />
              </RelativeLayout>
              </LinearLayout>
-         </ScrollView>
+         </LinearLayout>
+                         
+                         
+             
          
-       
-</LinearLayout>
-
-  <RelativeLayout 
-      android:layout_width="wrap_content"
-      android:background="@drawable/ae14"
-      android:layout_marginLeft="70dp"
-      android:layout_marginRight="70dp"
-      android:layout_alignParentBottom="true"
-      android:layout_centerHorizontal="true"
-      android:layout_height="wrap_content"
-      >
-         <LinearLayout 
-             android:layout_width="fill_parent"
-             android:paddingLeft="20dp"
-             android:paddingRight="20dp"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal"
-            android:layout_centerHorizontal="true"
-             >
-             <ImageView 
-                 android:layout_width="0dp"
-                 android:layout_weight="1"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/ae15"
-                 />
-             <ImageView 
-                 android:layout_width="0dp"
-                 android:layout_weight="1"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/ae16"
-                 />
-                          <ImageView 
-                 android:layout_width="0dp"
-                 android:layout_weight="1"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/ae17"
-                 />
-                          <ImageView 
-                 android:layout_width="0dp"
-                 android:layout_weight="1"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/ae18"
-                 />
-             </LinearLayout>
+         </LinearLayout>
+        </RelativeLayout>
+        </LinearLayout>
+         </com.example.view.StickyScrollView>
+   
     
-  </RelativeLayout>
-    <ImageView 
-                           android:layout_height="wrap_content"
-          android:layout_width="wrap_content"
-          android:src="@drawable/ae20"
-          android:layout_alignParentBottom="true"
-          android:layout_alignParentRight="true"
-          android:layout_marginRight="8dp"
-          
-          
-          />
 </RelativeLayout>
