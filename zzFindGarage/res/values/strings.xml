@@ -62,12 +62,13 @@
           <string name="af12">50</string>
           <string name="af13">8</string>
           <string name="af14">180m</string>
-          <string name="ad1">Open Rice帳護登入</string>
+          <string name="ad1">FIND GARAGE帳護登入</string>
           <string name="ad2">Facebook登入</string>
           <string name="ad3">Google登入</string>
           <string name="ad4">地區及語言(Language)</string>
+          <string name="ad41">有關說明</string>
           <string name="ad5">有關我們</string>
-          <string name="ad6">贊好OpenRice場面</string>
+          <string name="ad6">贊好FIND GARAGE場面</string>
           <string name="ad7">聯酪我們</string>
           <string name="ad8">每月排行</string>
           <string name="za1">會員登入</string>
@@ -92,7 +93,7 @@
           <string name="az12">出生年份</string>
           <string name="az13">請選擇</string>
           <string name="az14">替代文字替代文字替代文字替代文字替代文字替代文字替代文字替代文字替代文字替代文字替代文字替代文字</string>
-          <string name="az15">按以上登記鍵即代表妳願意接受OPENRICE之隱私權限聲明及使用條款細則所約束</string>
+          <string name="az15">按以上登記鍵即代表妳願意接受FIND GARAGE之隱私權限聲明及使用條款細則所約束</string>
           <string name="az16">----------------------------------------------------------------------------</string>
           
      <string name="bz1">聯絡我們</string>
@@ -102,6 +103,7 @@
                <string name="bz5">momo@imymedia.com</string>
                <string name="bz6">訊息類別</string>
                     <string name="bz7">提交意見</string>
+                    <string name="bz71">提交</string>
                     <string name="bz8">內容</string>
                     <string name="bz9">告訴我們妳的意見/查詢</string>
  <string name="bz11">推廣優惠</string>
@@ -116,6 +118,8 @@
 <string name="bz21">推廣優惠</string>
 <string name="bz22">優惠及條款</string>
 <string name="bz23">我的優惠</string>
+<string name="bz231">我的收藏</string>
+<string name="bz2311">收藏</string>
 <string name="bz24">3</string>
 
 <string name="test">adasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefaw</string>

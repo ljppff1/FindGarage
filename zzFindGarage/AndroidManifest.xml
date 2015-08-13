@@ -42,6 +42,7 @@
         <activity android:name="com.example.wfindgarage.tuiguangyouhuiActivity"></activity>
         <activity android:name="com.example.wfindgarage.TuiDetailActivity"></activity>
         <activity android:name="com.example.wfindgarage.WoDeCheFangActivity"></activity>
+        <activity android:name="com.example.wfindgarage.WoDeCheFangDetailActivity"></activity>
         
     </application>
 

@@ -124,7 +124,7 @@ public class WoDeCheFangActivity extends FragmentActivity {
 								 mDataList_origin.clear();
 								 JSONArray array = jsonObject.getJSONArray("data");
 								  for (int i = 0; i < array.length(); i++) {
-									  if(i>5){
+									  if(i>1){
 										  break;
 									  }
 									  Data  data=new Data();
@@ -182,6 +182,7 @@ public class WoDeCheFangActivity extends FragmentActivity {
 				@Override
 				public void onItemClick(AdapterView<?> parent,
 						View view, int position, long id) {
+					startActivity(new Intent(getApplicationContext(), WoDeCheFangDetailActivity.class));
 				}
 			});
 		}
@@ -214,7 +215,15 @@ public class WoDeCheFangActivity extends FragmentActivity {
 			}else{
 				holder =(Holder)convertView.getTag();
 			}
-			holder.mTvri10.setText(position+"");
+			if(position==0){
+			holder.mTvri10.setText(3+"");
+			holder.mTvri11.setText(getResources().getString(R.string.bz23));
+			}else{
+				holder.mTvri10.setText(4+"");
+				holder.mTvri11.setText(getResources().getString(R.string.bz231));
+
+			}
+			
 			//holder.mTvri12.setText(mDataList.get(position).Name);
 			initImageLoaderOptions();
 			imageLoader.displayImage(mDataList.get(position).CoverPic,

@@ -205,12 +205,15 @@ public class MeiYuePaiHangActivity extends Activity {
 						.inflate(R.layout.item_gridview_2, null);
 				holder = new Holder();
 				holder.mTvri11 =(TextView)convertView.findViewById(R.id.mTvri11);
+				holder.mTvri12 =(TextView)convertView.findViewById(R.id.mTvri12);
+				
 				holder.imageView =(ImageView)convertView.findViewById(R.id.iv_listview_rent_pic);
 				convertView.setTag(holder);
 
 			}else{
 				holder =(Holder)convertView.getTag();
 			}
+            holder.mTvri12.setText((position+2)+"");
 			holder.mTvri11.setText(mDataList.get(position).Name);
 			initImageLoaderOptions();
 			imageLoader.displayImage(mDataList.get(position).CoverPic,

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="myradio1">#6699FF</color><!--亮黄色 -->
-    <color name="myradio2">#3366CC</color><!--亮黄色 -->
-    <color name="myloginb">#bfbfbf</color><!--亮黄色 -->
+    <color name="myradio1">#0099dc</color><!--亮黄色 -->
+    <color name="myradio2">#007ad1</color><!--亮黄色 -->
+    <color name="myloginb">#f3f2f3</color><!--亮黄色 -->
+        <color name="myshennan">#f3f2f3</color><!--亮黄色 -->
     
 <color name="lightyellow">#FFFFE0</color><!--亮黄色 -->
 

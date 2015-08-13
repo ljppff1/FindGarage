@@ -78,11 +78,7 @@
          android:text="@string/bz3"
          />
  </LinearLayout>
-                          <View 
-     android:layout_width="fill_parent"
-     android:layout_height="0.5dp"
-     android:background="@color/black"
-     />
+                         
                                <LinearLayout
      android:layout_width="fill_parent"
      android:layout_height="60dp"
@@ -114,11 +110,7 @@
          android:text="@string/bz5"
          />
  </LinearLayout>
-                          <View 
-     android:layout_width="fill_parent"
-     android:layout_height="0.5dp"
-     android:background="@color/black"
-     />
+                      
                  <LinearLayout
      android:layout_width="fill_parent"
      android:layout_height="60dp"
@@ -150,11 +142,7 @@
          android:text="@string/bz7"
          />
  </LinearLayout>
-                          <View 
-     android:layout_width="fill_parent"
-     android:layout_height="0.5dp"
-     android:background="@color/black"
-     />
+                       
              <LinearLayout
      android:layout_width="fill_parent"
      android:layout_height="60dp"
@@ -186,11 +174,7 @@
          android:text="@string/bz9"
          />
  </LinearLayout>
-                          <View 
-     android:layout_width="fill_parent"
-     android:layout_height="0.5dp"
-     android:background="@color/black"
-     />
+                         
                         <RelativeLayout
      android:layout_width="fill_parent"
      android:layout_height="wrap_content"
@@ -200,7 +184,7 @@
                      <Button 
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
-                    android:text="@string/bz11"
+                    android:text="@string/bz71"
                     android:textSize="24sp"
                     android:textColor="@color/white"
                     android:gravity="center"

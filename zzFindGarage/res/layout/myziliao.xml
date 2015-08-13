@@ -87,6 +87,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
+            android:visibility="gone"
             android:layout_marginRight="4dp"
             android:layout_marginTop="1dp"
             android:background="@color/white"
@@ -115,6 +116,8 @@
         </RelativeLayout><RelativeLayout 
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+                        android:visibility="gone"
+            
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:layout_marginTop="1dp"
@@ -144,12 +147,31 @@
         </RelativeLayout>
         
                
-        <RelativeLayout 
+            <RelativeLayout 
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:layout_marginTop="40dp"
+            >            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ad41"
+                android:layout_centerVertical="true"
+                android:paddingTop="8dp"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:paddingLeft="2dp"
+                android:paddingBottom="8dp"
+                />
+            
+            
+            </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
             android:background="@color/white"
             >
             <TextView 

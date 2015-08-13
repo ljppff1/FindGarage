@@ -99,7 +99,6 @@ public class ZiliaochefangActivity extends FragmentActivity {
 			}
 		});
 		rb1.setChecked(true);
-		rb1.setBackgroundColor(R.color.yellow);
 
 	}
 	OnClickListener listener =new  OnClickListener() {

@@ -50,7 +50,7 @@ public class Main1Activity extends Activity {
 		hListView = (com.example.view.HorizontalListView)findViewById(R.id.horizon_listview);
 	
 		String[] titles = {"車房搜尋", "附近車房", "提供車房資料", "聯系我們", "設定", "排行榜"};
-		String[] titles1 ={"我的車房","推廣優惠","FACEBOOK專業","房車推廣","最新評論","汽車誌"};
+		String[] titles1 ={"我的車房","推廣優惠","FACEBOOK專页","房車推廣","最新評論","汽車誌"};
 		hListViewAdapter = new com.example.view.HorizontalListViewAdapter(getApplicationContext(),titles,b,titles1,b1);
 		hListView.setAdapter(hListViewAdapter);
 
