@@ -26,8 +26,8 @@ public class Main1Activity extends Activity {
 	private LinearLayout ovalLayout;
 	private ArrayList<View> listViews;
     private int[] a ={R.string.b1,R.string.b2,R.string.b3,R.string.b4,R.string.b5,R.string.b6,R.string.b7,R.string.b8,R.string.b9,R.string.b10,R.string.b11,R.string.b12,};
-    private int[] b ={R.drawable.bb1,R.drawable.bb2,R.drawable.bb3,R.drawable.bb4,R.drawable.bb5,R.drawable.bb6};
-    private int[] b1 ={R.drawable.bb7,R.drawable.bb8,R.drawable.bb9,R.drawable.bb10,R.drawable.bb11,R.drawable.bb12};
+    private int[] b ={R.drawable.bb1,R.drawable.bb2,R.drawable.bb10,R.drawable.bb11,R.drawable.bb6,R.drawable.bb9};
+    private int[] b1 ={R.drawable.bb8,R.drawable.bb12,R.drawable.bb4,R.drawable.bb3,R.drawable.bb5};
 	private Myadapter adapter;
 	private com.example.view.HorizontalListViewAdapter hListViewAdapter;
 	private com.example.view.HorizontalListView hListView;
@@ -49,8 +49,8 @@ public class Main1Activity extends Activity {
 				R.drawable.dot_focused, R.drawable.dot_normal);
 		hListView = (com.example.view.HorizontalListView)findViewById(R.id.horizon_listview);
 	
-		String[] titles = {"車房搜尋", "附近車房", "提供車房資料", "聯系我們", "設定", "排行榜"};
-		String[] titles1 ={"我的車房","推廣優惠","FACEBOOK專页","房車推廣","最新評論","汽車誌"};
+		String[] titles = {"車房搜尋", "附近車房","我的房車", "最新評論", "排行榜","FACEBOOK專页"};
+		String[] titles1 ={"推廣優惠", "汽車誌","聯系我們","提供車房資料","設定"};
 		hListViewAdapter = new com.example.view.HorizontalListViewAdapter(getApplicationContext(),titles,b,titles1,b1);
 		hListView.setAdapter(hListViewAdapter);
 

@@ -16,11 +16,12 @@
     <application
         android:allowBackup="true"
         android:name="com.example.utils.UILApplication"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ttt2"
         android:label="@string/app_name"
-        android:theme="@style/activityTheme" >
+     >
         <activity
-            android:name="com.example.wfindgarage.Main1Activity"
+               android:theme="@style/activityTheme" 
+            android:name="com.example.wfindgarage.SplishActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.wfindgarage.Main1Activity"></activity>
         <activity android:name="com.example.wfindgarage.JianJiechefangActivity"></activity>
         <activity android:name="com.example.wfindgarage.SearchYaocheActivity"></activity>
         <activity android:name="com.example.wfindgarage.ZiliaochefangActivity"></activity>
@@ -43,6 +45,8 @@
         <activity android:name="com.example.wfindgarage.TuiDetailActivity"></activity>
         <activity android:name="com.example.wfindgarage.WoDeCheFangActivity"></activity>
         <activity android:name="com.example.wfindgarage.WoDeCheFangDetailActivity"></activity>
+        <activity android:name="com.example.wfindgarage.WoDeCheFangDetail1Activity"></activity>
+        <activity android:name="com.example.wfindgarage.TiGongCheFangZiLiaoActivity"></activity>
         
     </application>
 

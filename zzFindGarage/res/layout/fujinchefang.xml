@@ -38,7 +38,7 @@
                     android:checked="true"
                     android:gravity="center"
                     android:text="@string/af8"
-                    android:textColor="@color/white"
+                    android:textColor="@color/mycolor1"
                     android:textSize="22sp" />
                 <View 
                     android:layout_width="1dp"
@@ -54,7 +54,7 @@
                     android:button="@null"
                     android:gravity="center"
                     android:text="@string/af9"
-                    android:textColor="@color/white"
+                    android:textColor="@color/mycolor1"
                     android:textSize="22sp" /> 
             </RadioGroup>
         

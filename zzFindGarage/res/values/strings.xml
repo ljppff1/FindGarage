@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+   
     <string name="app_name">WFindGarage</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -8,6 +8,7 @@
      <string name="b1">車房搜尋</string>
      <string name="b2">附近車房</string>
      <string name="b3">提供車房資料</string>
+     <string name="bb1">汽車誌</string>
           <string name="b4">聯系我們</string>
           <string name="b5">設定</string>
                <string name="b6">排行榜</string>
@@ -17,7 +18,7 @@
                          <string name="b10">房車推廣</string>
                          <string name="b11">最新評論</string>
                               <string name="b12">汽車誌</string>
-               <string name="sb1">搖車房搜索</string>
+               <string name="sb1">車房搜索</string>
     <string name="t1">區域</string>                          
     <string name="t2">地區</string>                          
     <string name="t3">商店目錄</string>                          
@@ -32,7 +33,7 @@
     <string name="e3">替代文字替代文字替代文字替代文字</string>
         <string name="e4">待續</string>
             <string name="tt1">車房壹</string>
-             <string name="tt2">車房基本資料</string>
+            <string name="tt2">車房基本資料</string>
             <string name="tt3">地址</string>
              <string name="tt4">替代文字替代文字</string>
              <string name="tt41">替代文字</string>
@@ -46,6 +47,8 @@
                           <string name="ae5">DOWNLOAD</string>
          <string name="ae6">替代文字替代文字</string>
          <string name="ab1">最近消息</string>
+         <string name="ab1a">車房名稱、地址、電話等.</string>
+        
                   <string name="ab2">最新文章</string>
                   <string name="ab3">替代文字替代文字替代文字替代文字替代文字替代文字</string>
                   <string name="ab4">替代文字</string>
@@ -62,7 +65,7 @@
           <string name="af12">50</string>
           <string name="af13">8</string>
           <string name="af14">180m</string>
-          <string name="ad1">FIND GARAGE帳護登入</string>
+          <string name="ad1">FIND GARAGE帳戶登入</string>
           <string name="ad2">Facebook登入</string>
           <string name="ad3">Google登入</string>
           <string name="ad4">地區及語言(Language)</string>
@@ -121,6 +124,20 @@
 <string name="bz231">我的收藏</string>
 <string name="bz2311">收藏</string>
 <string name="bz24">3</string>
-
+<string name="bc1">車房</string>
+<string name="bc2">車房名稱</string>
+<string name="bc3">車牌號</string>
+<string name="bc4">車輛詳情</string>
+<string name="bc5">評論標題*</string>
+<string name="bc6">輸入標題</string>
+<string name="bc7">尋車房途徑*</string>
+<string name="bc8">內容*</string>
+<string name="bc9">評分*</string>
+<string name="bc11">為這車房評分</string>
+<string name="bc12">用戶推介</string>
+<string name="bc13">有什麽車房值得推介</string>
+<string name="bc14">更多資料</string>
 <string name="test">adasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefaw</string>
+
+
 </resources>

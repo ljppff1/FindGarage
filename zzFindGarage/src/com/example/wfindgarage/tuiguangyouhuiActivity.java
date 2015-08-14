@@ -41,7 +41,7 @@ public class tuiguangyouhuiActivity extends FragmentActivity {
 	private ArrayList<Fragment> list;
 	private ImageView mIvtt1;
 	private FragmentFJ1atui fa;
-	private FragmentFJ1btui fb;
+	private FragmentFJ1atui fb;
 	@SuppressLint("ResourceAsColor")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +82,7 @@ public class tuiguangyouhuiActivity extends FragmentActivity {
 
 		list = new ArrayList<Fragment>();
 		 fa=new FragmentFJ1atui();
-		 fb=new FragmentFJ1btui();
+		 fb=new FragmentFJ1atui();
 		list.add(fa);
 		list.add(fb);
         

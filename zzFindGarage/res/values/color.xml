@@ -4,6 +4,13 @@
     <color name="myradio2">#007ad1</color><!--亮黄色 -->
     <color name="myloginb">#f3f2f3</color><!--亮黄色 -->
         <color name="myshennan">#f3f2f3</color><!--亮黄色 -->
+    <color name="mylo1">#f2f3f3</color>
+        <color name="mycolor1">#000000</color><!--亮黄色 -->
+    
+    
+    
+        <color name="half_transparent">#6fffffff</color>
+    
     
 <color name="lightyellow">#FFFFE0</color><!--亮黄色 -->
 
@@ -293,7 +300,7 @@
 
 <color name="darkgreen">#006400</color><!--暗绿色 -->
 
-<color name="blue">#0000FF</color><!--蓝色 -->
+<color name="blue">#007ad1</color><!--蓝色 -->
 <color name="color_blue_text">#ff23a2dc</color>
 <color name="mediumblue">#0000CD</color><!--中兰色 -->
 

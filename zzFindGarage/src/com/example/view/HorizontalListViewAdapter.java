@@ -3,12 +3,15 @@ package com.example.view;
 
 import com.example.wfindgarage.JianJiechefangActivity;
 import com.example.wfindgarage.LianxiwomenActivity;
+import com.example.wfindgarage.Main1Activity;
+import com.example.wfindgarage.MainActivity;
 import com.example.wfindgarage.MeiYuePaiHangActivity;
 import com.example.wfindgarage.MyZiliaoActivity;
 import com.example.wfindgarage.NewDiscussActivity;
 import com.example.wfindgarage.NewNoticeActivity;
 import com.example.wfindgarage.R;
 import com.example.wfindgarage.SearchYaocheActivity;
+import com.example.wfindgarage.TiGongCheFangZiLiaoActivity;
 import com.example.wfindgarage.WoDeCheFangActivity;
 import com.example.wfindgarage.ZiliaochefangActivity;
 import com.example.wfindgarage.chefangActivity;
@@ -16,6 +19,7 @@ import com.example.wfindgarage.fujinchefangActivity;
 import com.example.wfindgarage.huiyuandengluActivity;
 import com.example.wfindgarage.tuiguangyouhuiActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -88,34 +92,34 @@ public class HorizontalListViewAdapter extends BaseAdapter{
 			
 			@Override
 			public void onClick(View v) {
-				
-	             if(position==5){
+		           if(position==0){
+		            	 Intent intent =new Intent(mContext, tuiguangyouhuiActivity.class);
+		            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		             mContext.startActivity(intent);
+
+		             }
+
+	             if(position==1){
 	            	 Intent intent =new Intent(mContext, ZiliaochefangActivity.class);
 	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	             mContext.startActivity(intent);
 	             }
-	             if(position==3){
-	            	 Intent intent =new Intent(mContext, tuiguangyouhuiActivity.class);
+	             if(position==2){
+	            	 Intent intent =new Intent(mContext, LianxiwomenActivity.class);
 	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	             mContext.startActivity(intent);
 	             }
-             if(position==1){
-            	 Intent intent =new Intent(mContext, tuiguangyouhuiActivity.class);
+             if(position==3){
+            	 Intent intent =new Intent(mContext, TiGongCheFangZiLiaoActivity.class);
             	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
              mContext.startActivity(intent);
              }
              if(position==4){
-            	 Intent intent =new Intent(mContext, NewDiscussActivity.class);
+            	 Intent intent =new Intent(mContext, MyZiliaoActivity.class);
             	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
              mContext.startActivity(intent);
              }
-             
-           if(position==0){
-            	 Intent intent =new Intent(mContext, WoDeCheFangActivity.class);
-            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-             mContext.startActivity(intent);
-             }
-
+         
              
              
 			}
@@ -124,42 +128,45 @@ public class HorizontalListViewAdapter extends BaseAdapter{
 			
 			@Override
 			public void onClick(View v) {
-                if(position==4){
-	            	 Intent intent =new Intent(mContext, MyZiliaoActivity.class);
+	             if(position==0){
+	            	 Intent intent =new Intent(mContext, SearchYaocheActivity.class);
+	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	             mContext.startActivity(intent);
+	                 }
+	                 if(position==1){
+		            	 Intent intent =new Intent(mContext, fujinchefangActivity.class);
+		            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		             mContext.startActivity(intent);
+	                 }
+
+
+                if(position==2){
+	            	 Intent intent =new Intent(mContext, WoDeCheFangActivity.class);
 	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	             mContext.startActivity(intent);
                 }
                 if(position==3){
-	            	 Intent intent =new Intent(mContext, LianxiwomenActivity.class);
+	            	 Intent intent =new Intent(mContext, NewDiscussActivity.class);
 	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	             mContext.startActivity(intent);
                 }
-		             if(position==0){
-		            	 Intent intent =new Intent(mContext, SearchYaocheActivity.class);
-		            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		             mContext.startActivity(intent);
-		                 }
-		                 if(position==1){
-			            	 Intent intent =new Intent(mContext, fujinchefangActivity.class);
-			            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			             mContext.startActivity(intent);
-		                 }
 
-	                 if(position==5){
-		            	 Intent intent =new Intent(mContext, MeiYuePaiHangActivity.class);
-		            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		             mContext.startActivity(intent);
-	                 }
+                if(position==4){
+	            	 Intent intent =new Intent(mContext, MeiYuePaiHangActivity.class);
+	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	             mContext.startActivity(intent);
+                }
 			}
 		});
 		
 		holder.mTitle.setText(mTitles[position]);
 		iconBitmap = getPropThumnail(mIconIDs[position]);
 		holder.mImage.setImageBitmap(iconBitmap);
+		if(position<5){
 		holder.mTitle1.setText(mTitles1[position]);
 		iconBitmap1 = getPropThumnail(mIconIDs1[position]);
 		holder.mImage1.setImageBitmap(iconBitmap1);
-
+		}
 		return convertView;
 	}
 

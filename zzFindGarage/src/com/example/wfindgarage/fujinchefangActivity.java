@@ -37,7 +37,7 @@ public class fujinchefangActivity extends FragmentActivity {
 	private ArrayList<Fragment> list;
 	private ImageView mIvtt1;
 	private FragmentFJ1a fa;
-	private FragmentFJ1b fb;
+	private FragmentFJ1a fb;
 	@SuppressLint("ResourceAsColor")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +78,7 @@ public class fujinchefangActivity extends FragmentActivity {
 
 		list = new ArrayList<Fragment>();
 		 fa=new FragmentFJ1a();
-		 fb=new FragmentFJ1b();
+		 fb=new FragmentFJ1a();
 		list.add(fa);
 		list.add(fb);
         

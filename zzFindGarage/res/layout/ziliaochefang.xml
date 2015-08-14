@@ -102,7 +102,7 @@
             android:layout_centerHorizontal="true"
             android:textSize="25sp"
             android:drawableBottom="@drawable/ttb4"
-            android:text="@string/e1"
+            android:text="@string/bb1"
             android:textColor="@color/white"
             />
     </RelativeLayout>

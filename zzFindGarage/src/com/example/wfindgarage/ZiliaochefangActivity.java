@@ -76,8 +76,8 @@ public class ZiliaochefangActivity extends FragmentActivity {
 
 		list = new ArrayList<Fragment>();
 		com.example.fragment.Fragment1a fa=new com.example.fragment.Fragment1a();
-		com.example.fragment.Fragment1b fb=new com.example.fragment.Fragment1b();
-		com.example.fragment.Fragment1c fc=new com.example.fragment.Fragment1c();
+		com.example.fragment.Fragment1a fb=new com.example.fragment.Fragment1a();
+		com.example.fragment.Fragment1a fc=new com.example.fragment.Fragment1a();
 		list.add(fa);
 		list.add(fb);
 		list.add(fc);

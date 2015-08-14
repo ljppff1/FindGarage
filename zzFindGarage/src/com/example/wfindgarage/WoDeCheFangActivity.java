@@ -182,7 +182,13 @@ public class WoDeCheFangActivity extends FragmentActivity {
 				@Override
 				public void onItemClick(AdapterView<?> parent,
 						View view, int position, long id) {
+					if(position==1){
 					startActivity(new Intent(getApplicationContext(), WoDeCheFangDetailActivity.class));
+					}
+					if(position==0){
+					startActivity(new Intent(getApplicationContext(), WoDeCheFangDetail1Activity.class));
+					}
+					
 				}
 			});
 		}

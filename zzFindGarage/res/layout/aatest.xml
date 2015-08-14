@@ -1,71 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     android:layout_width="fill_parent"
+        android:background="@color/white"
+    
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
       <RelativeLayout 
     android:layout_width="fill_parent"
     android:layout_height="40dp"
-    android:background="@color/black"
     android:id="@+id/mV1"
     ></RelativeLayout>
-     
-        <RelativeLayout 
-      android:layout_width="wrap_content"
-      android:background="@drawable/ae14"
-      android:layout_marginLeft="70dp"
-      android:layout_marginRight="70dp"
-      android:id="@+id/mRlcf1"
-      android:layout_alignParentBottom="true"
-      android:layout_centerHorizontal="true"
-      android:layout_height="wrap_content"
-      >
-         <LinearLayout 
-             android:layout_width="fill_parent"
-             android:paddingLeft="20dp"
-             android:paddingRight="20dp"
-             
-             android:layout_height="wrap_content"
-             android:orientation="horizontal"
-            android:layout_centerHorizontal="true"
-             >
-             <ImageView 
-                 android:layout_width="0dp"
-                 android:layout_weight="1"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/ae15"
-                 />
-             <ImageView 
-                 android:layout_width="0dp"
-                 android:layout_weight="1"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/ae16"
-                 />
-                          <ImageView 
-                 android:layout_width="0dp"
-                 android:layout_weight="1"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/ae17"
-                 />
-                          <ImageView 
-                 android:layout_width="0dp"
-                 android:layout_weight="1"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/ae18"
-                 />
-             </LinearLayout>
-    
-  </RelativeLayout>
-    <ImageView 
-                           android:layout_height="wrap_content"
-          android:layout_width="wrap_content"
-          android:src="@drawable/ae20"
-          android:layout_alignParentBottom="true"
-          android:layout_alignParentRight="true"
-          android:layout_marginRight="8dp"/>
+   
       
 <com.example.view.StickyScrollView
-    android:layout_above="@id/mRlcf1"
     android:id="@+id/ScrollView"
     android:layout_below="@id/mV1"
     android:layout_width="fill_parent"
@@ -106,20 +53,56 @@
              android:orientation="horizontal"
              >
              <ImageView 
+                 android:layout_width="38dp"
+                 android:layout_height="38dp"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/ae1"
+                 
+                 />
+             <TextView 
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
-                 android:src="@drawable/ae1"
+                 android:text="3"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="3dp"
+                 android:textSize="20sp"
+                 android:textColor="@color/red"
                  />
              <ImageView 
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/ae2"
+                 android:layout_marginLeft="13dp"
+                 android:layout_width="38dp"
+                 android:layout_height="38dp"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/ok2"
                  />
-                          <ImageView 
+                          <TextView 
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
+                 android:text="3"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="3dp"
+                 android:textSize="20sp"
+                 android:textColor="@color/red"
+                 />
+             
+                          <ImageView 
+                 android:layout_width="38dp"
+                                  android:layout_marginLeft="13dp"
+                 
+                 android:layout_height="38dp"
+                 android:scaleType="fitXY"
                  android:src="@drawable/ae3"
                  />
+                                       <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="3"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="3dp"
+                 android:textSize="20sp"
+                 android:textColor="@color/red"
+                 />
+                          
              </LinearLayout>
      </RelativeLayout>
 
@@ -219,6 +202,7 @@
          <RelativeLayout 
              android:layout_width="fill_parent"
              android:layout_height="wrap_content"
+             android:visibility="gone"
              >
              <RelativeLayout 
                  android:layout_alignParentRight="true"
@@ -405,6 +389,11 @@
              android:text="@string/test"
              />
              </RelativeLayout>
+             <View 
+                 android:layout_width="fill_parent"
+                 android:layout_height="60dp"
+                 
+                 />
              </LinearLayout>
          </LinearLayout>
                          
@@ -413,6 +402,61 @@
     </LinearLayout>
 
 </com.example.view.StickyScrollView>
+  
+        <RelativeLayout 
+      android:layout_width="wrap_content"
+      android:background="@drawable/ae14"
+      android:layout_marginLeft="70dp"
+      android:layout_marginRight="70dp"
+      android:id="@+id/mRlcf1"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_height="wrap_content"
+      >
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+             
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+             >
+             <ImageView 
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ae15"
+                 />
+             <ImageView 
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ae16"
+                 />
+                          <ImageView 
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ae17"
+                 />
+                          <ImageView 
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ae18"
+                 />
+             </LinearLayout>
+    
+  </RelativeLayout>
+    <ImageView 
+                           android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:src="@drawable/ae20"
+          android:visibility="gone"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="8dp"/>
  <RelativeLayout 
     android:layout_width="fill_parent"
     android:layout_height="50dp"
