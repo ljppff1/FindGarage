@@ -11,7 +11,8 @@
     
         <color name="half_transparent">#6fffffff</color>
     
-    
+        <color name="holo_blue">#FF33E5B5</color>
+        
 <color name="lightyellow">#FFFFE0</color><!--亮黄色 -->
 
 <color name="yellow">#FFFF00</color><!--黄色 -->

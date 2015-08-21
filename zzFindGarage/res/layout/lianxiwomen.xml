@@ -75,10 +75,14 @@
          android:textColor="@color/black"
          android:layout_gravity="center"
          android:layout_marginLeft="6dp"
-         android:text="@string/bz3"
          />
  </LinearLayout>
                          
+     <View 
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dp"
+         android:background="@color/black"
+         />
                                <LinearLayout
      android:layout_width="fill_parent"
      android:layout_height="60dp"
@@ -107,10 +111,14 @@
          android:textColor="@color/black"
          android:layout_gravity="center"
          android:layout_marginLeft="6dp"
-         android:text="@string/bz5"
          />
  </LinearLayout>
-                      
+                      <View 
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dp"
+         android:background="@color/black"
+         />
+                               
                  <LinearLayout
      android:layout_width="fill_parent"
      android:layout_height="60dp"
@@ -141,7 +149,12 @@
          android:layout_marginLeft="6dp"
          android:text="@string/bz7"
          />
- </LinearLayout>
+ </LinearLayout>     <View 
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dp"
+         android:background="@color/black"
+         />
+ 
                        
              <LinearLayout
      android:layout_width="fill_parent"
@@ -174,7 +187,12 @@
          android:text="@string/bz9"
          />
  </LinearLayout>
-                         
+                           <View 
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dp"
+         android:background="@color/black"
+         />
+             
                         <RelativeLayout
      android:layout_width="fill_parent"
      android:layout_height="wrap_content"

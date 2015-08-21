@@ -153,6 +153,8 @@
                  <com.example.view.MyListView 
      android:layout_width="fill_parent"
      android:layout_height="fill_parent"
+          android:divider="@null" 
+     
      android:id="@+id/mLv1"
      ></com.example.view.MyListView>
             <ProgressBar

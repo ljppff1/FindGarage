@@ -72,6 +72,8 @@ public class MeiYuePaiHangActivity extends Activity {
 	private RelativeLayout mRlmy1;
 
 	private ScrollView mSvmy1;
+
+	private RelativeLayout mRlmy2;
 	@SuppressLint("ResourceAsColor")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +91,8 @@ public class MeiYuePaiHangActivity extends Activity {
 		progressBar_sale =(ProgressBar)this.findViewById(R.id.progressBar_sale);
 		progressBar_sale.setVisibility(View.VISIBLE);
 		mRlmy1.setVisibility(View.GONE);
-
+		mRlmy2 =(RelativeLayout)this.findViewById(R.id.mRlmy2);
+		mRlmy2.setOnClickListener(listener);
 		
 	}
 	
@@ -178,7 +181,7 @@ public class MeiYuePaiHangActivity extends Activity {
 				@Override
 				public void onItemClick(AdapterView<?> parent,
 						View view, int position, long id) {
-				//	Toast.makeText(getApplicationContext(), position+"", 1).show();
+					startActivity(new Intent(getApplicationContext(), chefangActivity.class));
 				}
 			});
 	    
@@ -265,6 +268,9 @@ public class MeiYuePaiHangActivity extends Activity {
 			switch (v.getId()) {
 			case R.id.mIvtt1:
 				finish();
+				break;
+			case R.id.mRlmy2:
+				startActivity(new Intent(getApplicationContext(), chefangActivity.class));
 				break;
 
 			default:

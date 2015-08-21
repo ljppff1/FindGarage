@@ -23,13 +23,13 @@
                 >
              <RelativeLayout 
                               android:layout_width="fill_parent"
-             android:layout_height="130dp"
+             android:layout_height="158dp"
                               android:id="@+id/mRlmy2"
                  android:layout_margin="2dp"
                  >
         <RelativeLayout 
              android:layout_width="fill_parent"
-             android:layout_height="130dp"
+             android:layout_height="158dp"
                                            android:id="@+id/mRlmy1"
              
              android:visibility="gone"
