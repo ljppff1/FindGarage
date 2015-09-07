@@ -2,6 +2,7 @@
 <RelativeLayout
     android:layout_width="fill_parent"
         android:background="@color/white"
+        android:id="@+id/main"
     
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -72,6 +73,7 @@
                  android:layout_gravity="center"
                  android:layout_marginLeft="3dp"
                  android:textSize="20sp"
+                 android:id="@+id/mTvaa1"
                  android:textColor="@color/red"
                  />
              <ImageView 
@@ -106,6 +108,7 @@
                  android:layout_gravity="center"
                  android:layout_marginLeft="3dp"
                  android:textSize="20sp"
+                 android:id="@+id/mTvaa2"
                  android:textColor="@color/red"
                  />
                           
@@ -423,7 +426,7 @@
              android:layout_width="fill_parent"
              android:paddingLeft="20dp"
              android:paddingRight="20dp"
-             
+             android:id="@+id/mLLaa1"
              android:layout_height="wrap_content"
              android:orientation="horizontal"
             android:layout_centerHorizontal="true"
@@ -496,4 +499,11 @@
             android:textColor="@color/white"
             />
     </RelativeLayout>
+                <ProgressBar
+            android:id="@+id/progressBar_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+ 
 </RelativeLayout>

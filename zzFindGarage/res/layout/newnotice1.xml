@@ -4,6 +4,7 @@
          xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
         android:layout_height="fill_parent"
+        android:id="@+id/mRlnnpar1"
         >
 
         
@@ -32,6 +33,9 @@
                         android:layout_height="45dp"
                         android:text="@string/t6"
                         android:textSize="20sp"
+                                                android:id="@+id/mBtn1"
+                        
+                        android:textColor="@color/white"
                         android:layout_centerInParent="true"
                         android:background="@drawable/dd6"
                         />
@@ -49,7 +53,8 @@
                         android:layout_height="45dp"
                         android:text="@string/t7"
                                                 android:textSize="20sp"
-                        
+                                                android:textColor="@color/white"
+                        android:id="@+id/mBtn2"
                         android:layout_centerInParent="true"
                         android:background="@drawable/dd6"
                         />
@@ -86,11 +91,13 @@
              <LinearLayout 
         android:layout_width="fill_parent"
         android:layout_height="55dp"
+        android:id="@+id/mLLnn1"
         android:orientation="horizontal"
         >
         <RelativeLayout 
             android:layout_width="0dp"
             android:layout_weight="1.2"
+            android:id="@+id/mRlnn1"
             android:background="@color/blue"
             android:layout_height="fill_parent"
             >
@@ -112,6 +119,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:textSize="22sp"
+               android:textColor="@color/black"
+                android:id="@+id/mTVnn1"
                 android:layout_marginLeft="15dp"
                 android:text="@string/t1"
                 />
@@ -126,10 +135,14 @@
         </RelativeLayout>
         
     </LinearLayout>
+    
         <LinearLayout 
         android:layout_width="fill_parent"
         android:layout_height="55dp"
+                android:id="@+id/mLLnn2"
+        
         android:orientation="horizontal"
+        
         >
         <RelativeLayout 
             android:layout_width="0dp"
@@ -154,7 +167,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                
                 android:textSize="22sp"
+                android:id="@+id/mTVnn2"
                 android:layout_marginLeft="15dp"
                 android:text="@string/t2"
                 />
@@ -198,6 +214,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:textSize="22sp"
+                                android:textColor="@color/black"
+                
                 android:layout_marginLeft="15dp"
                 android:text="@string/t3"
                 />
@@ -242,6 +260,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:textSize="22sp"
+                                android:textColor="@color/black"
+                
                 android:layout_marginLeft="15dp"
                 android:text="@string/t4"
                 />
@@ -259,6 +279,8 @@
             <LinearLayout 
         android:layout_width="fill_parent"
         android:layout_height="55dp"
+                android:id="@+id/mLLnn5"
+        
         android:orientation="horizontal"
         >
         <RelativeLayout 
@@ -280,13 +302,15 @@
             android:background="@drawable/dd7"
             android:layout_height="fill_parent"
             >
-            <TextView 
+            <EditText 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:textSize="22sp"
+                android:id="@+id/mEtnn5"
+                android:textColor="@color/black"
                 android:layout_marginLeft="15dp"
-                android:text="@string/t5"
+                android:hint="@string/t5"
                 />
             <ImageView 
                 android:layout_width="wrap_content"
@@ -334,6 +358,7 @@
         android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:textSize="25sp"
+            
             android:drawableBottom="@drawable/ttb4"
             android:text="@string/sb1"
             android:textColor="@color/white"

@@ -70,11 +70,10 @@
                       android:layout_width="fill_parent"
                       android:layout_height="wrap_content"
                       android:hint="@string/za5"
-                                            android:inputType="textPassword"
                       
                                             android:paddingTop="10dp"
                       android:paddingBottom="10dp"
-                      
+                      android:inputType="textPassword"
                         android:paddingLeft="15dp"
                      android:id="@+id/ui_password_input"
                       />
@@ -180,4 +179,11 @@
         android:drawableLeft="@drawable/ag2"
         />
 </RelativeLayout>
+            <ProgressBar
+            android:id="@+id/progressBar_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
 </RelativeLayout>

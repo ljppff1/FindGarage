@@ -33,6 +33,7 @@
         <activity android:name="com.example.wfindgarage.JianJiechefangActivity"></activity>
         <activity android:name="com.example.wfindgarage.SearchYaocheActivity"></activity>
         <activity android:name="com.example.wfindgarage.ZiliaochefangActivity"></activity>
+        <activity android:name="com.example.wfindgarage.ZiliaochefangActivity1"></activity>
         <activity android:name="com.example.wfindgarage.chefangActivity"></activity>
         <activity android:name="com.example.wfindgarage.NewNoticeActivity"></activity>
         <activity android:name="com.example.wfindgarage.NewDiscussActivity"></activity>
@@ -47,6 +48,8 @@
         <activity android:name="com.example.wfindgarage.WoDeCheFangDetailActivity"></activity>
         <activity android:name="com.example.wfindgarage.WoDeCheFangDetail1Activity"></activity>
         <activity android:name="com.example.wfindgarage.TiGongCheFangZiLiaoActivity"></activity>
+        <activity android:name="com.example.wfindgarage.SearchResultActivity"></activity>
+        <activity android:name="com.example.wfindgarage.PingFenActivity"></activity>
         
     </application>
 

@@ -116,7 +116,7 @@
      <string name="bz1">聯絡我們</string>
      <string name="bz2">你的名稱</string>
           <string name="bz3">momo520</string>
-          <string name="bz4">妳的電郵</string>
+          <string name="bz4">你的電郵</string>
                <string name="bz5">momo@imymedia.com</string>
                <string name="bz6">訊息類別</string>
                     <string name="bz7">提交意見</string>
@@ -152,5 +152,34 @@
 <string name="bc13">有什麽車房值得推介</string>
 <string name="bc14">更多資料</string>
 <string name="test">adasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefawadasdfadsfawefaw</string>
+<string name="abc21">首页</string>
+<string name="abc22">分类</string>
+<string name="abc23">展会</string>
+<string name="abc24">计数器</string>
+<string name="abc25">翻译</string>
+<string name="abc26">我的通讯</string>
+<string name="abc27">My Trade</string>
+<string name="abc31">请先选择上面的地区</string>
+<string name="abc32">暫無相關內容</string>
+<string name="abc33">搜索结果</string>
+<string name="abc34">请输入用户名</string>
+<string name="abc35">请输入密码</string>
+<string name="abc36">登录失败，请重登录</string>
+<string name="abc37">登录成功</string>
+<string name="abc41">请输入登入电邮</string>
+<string name="abc42">请输入姓名</string>
+<string name="abc43">请输入密码</string>
+<string name="abc44">注册成功</string>
+<string name="abca1">分享</string>
+<string name="abca2">收藏</string>
+<string name="abca3">写评论</string>
+<string name="abca4">提供新照片</string>
+<string name="abca2a">收藏成功</string>
+<string name="abca2b">完成</string>
+<string name="abca2c">评分</string>
+<string name="abca2c1">品质</string>
+<string name="abca2c2">环境</string>
+<string name="abca2c3">服务</string>
+<string name="abca2c4">周边</string>
 
 </resources>

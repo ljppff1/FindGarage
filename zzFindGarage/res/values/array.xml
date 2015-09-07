@@ -6,7 +6,8 @@
      <item>小姐</item>        
      <item>太太</item>        
      </string-array>
-  <string-array name="years">        
+  <string-array name="years"> 
+             
      <item>1990-1994</item>            
      <item>1985-1989</item>            
      <item>1980-1984</item>        

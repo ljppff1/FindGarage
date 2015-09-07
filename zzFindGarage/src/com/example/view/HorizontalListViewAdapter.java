@@ -14,6 +14,7 @@ import com.example.wfindgarage.SearchYaocheActivity;
 import com.example.wfindgarage.TiGongCheFangZiLiaoActivity;
 import com.example.wfindgarage.WoDeCheFangActivity;
 import com.example.wfindgarage.ZiliaochefangActivity;
+import com.example.wfindgarage.ZiliaochefangActivity1;
 import com.example.wfindgarage.chefangActivity;
 import com.example.wfindgarage.fujinchefangActivity;
 import com.example.wfindgarage.huiyuandengluActivity;
@@ -100,7 +101,7 @@ public class HorizontalListViewAdapter extends BaseAdapter{
 		             }
 
 	             if(position==1){
-	            	 Intent intent =new Intent(mContext, ZiliaochefangActivity.class);
+	            	 Intent intent =new Intent(mContext, ZiliaochefangActivity1.class);
 	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	             mContext.startActivity(intent);
 	             }

@@ -12,6 +12,7 @@
             android:id="@+id/mRlNn3"
     android:layout_width="fill_parent"
     android:layout_height="55dp"
+    android:visibility="gone"
     android:layout_alignParentBottom="true"
     android:background="@drawable/ab8"
     >

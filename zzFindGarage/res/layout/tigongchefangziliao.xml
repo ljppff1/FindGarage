@@ -13,8 +13,10 @@
     android:layout_width="fill_parent"
     android:layout_height="55dp"
     android:layout_alignParentBottom="true"
+    android:visibility="gone"
     android:background="@drawable/ab8"
     >
+    
  
 </RelativeLayout>
        <ScrollView 
@@ -32,6 +34,7 @@
     <RelativeLayout 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        
         >
         
             <RelativeLayout 
@@ -46,6 +49,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+                android:paddingLeft="8dp"
+    android:paddingRight="10dp"
+            
             >
             <LinearLayout
      android:layout_width="fill_parent"
@@ -70,6 +76,7 @@
          android:textSize="13sp"
          android:background="@null"
          android:paddingRight="4dp"
+         android:textColor="@color/black"
          android:layout_gravity="center_vertical"
          android:gravity="right"
          android:layout_height="wrap_content"
@@ -104,6 +111,8 @@
          android:layout_weight="2"
          android:textSize="13sp"
          android:background="@null"
+                  android:textColor="@color/black"
+         
          android:paddingRight="4dp"
          android:layout_gravity="center_vertical"
          android:gravity="right"
@@ -175,6 +184,8 @@
          android:paddingRight="4dp"
          android:layout_gravity="center_vertical"
          android:gravity="right"
+                  android:textColor="@color/black"
+         
          android:layout_height="wrap_content"
          android:hint="@string/bc11"
          />
@@ -210,6 +221,8 @@
          android:paddingRight="4dp"
          android:layout_gravity="center_vertical"
          android:gravity="right"
+                  android:textColor="@color/black"
+         
          android:layout_height="wrap_content"
          android:hint="@string/bc13"
          />
