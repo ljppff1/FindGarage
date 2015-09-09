@@ -31,6 +31,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -41,6 +42,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -94,6 +96,8 @@ public class chefangActivity extends FragmentActivity {
 	private TextView mTvaa1;
 	private TextView mTvaa2;
 
+	private String GarageID;
+
 	
 	@SuppressLint("ResourceAsColor")
 	@Override
@@ -108,7 +112,7 @@ public class chefangActivity extends FragmentActivity {
 		mIvtt1 =(ImageView)this.findViewById(R.id.mIvtt1);
 		mIvcf1 =(ImageView)this.findViewById(R.id.mIvcf1);
 		mIvtt1.setOnClickListener(listener);
-		 
+		GarageID = getIntent().getExtras().getString("GarageID");
 		progressBar_sale =(ProgressBar)this.findViewById(R.id.progressBar_sale);
 		progressBar_sale.setVisibility(View.GONE);
 		mTvae1 =(TextView)this.findViewById(R.id.mTvae1);
@@ -165,9 +169,11 @@ public class chefangActivity extends FragmentActivity {
 			}
 		}
 	};
+	private String UserID;
 
     //为弹出窗口实现监听类
     private OnClickListener  itemsOnClick = new OnClickListener(){
+
 
 		public void onClick(View v) {
 			menuWindow.dismiss();
@@ -178,7 +184,14 @@ public class chefangActivity extends FragmentActivity {
 			startActivity(new Intent(getApplicationContext(), PingFenActivity.class));
 				break;
 			case R.id.mRlpw2:	
-				initData();
+        		SharedPreferences sharedPreferences=getSharedPreferences("USER", 
+        				Activity.MODE_PRIVATE); 
+        		  UserID = sharedPreferences.getString("UserID", ""); 
+        	     if(!TextUtils.isEmpty(UserID)){
+				initData1();
+        	     }else{
+    	             startActivity(new Intent(getApplicationContext(), huiyuandengluActivity.class));
+        	     }
 				break;
 			case R.id.mRlpw1:				
 				break;
@@ -198,11 +211,12 @@ public class chefangActivity extends FragmentActivity {
 
     	 RequestParams params = new RequestParams();
        List<NameValuePair> nameValuePairs=new ArrayList<NameValuePair>(10);
-       nameValuePairs.add(new BasicNameValuePair("GarageID","2"));
+       nameValuePairs.add(new BasicNameValuePair("GarageID",GarageID));
+       nameValuePairs.add(new BasicNameValuePair("UserID", UserID));
        params.addBodyParameter(nameValuePairs);
        HttpUtils http = new HttpUtils();
        http.send(HttpRequest.HttpMethod.POST,
-      		 "http://josie.i3.com.hk/FG/json/garage_detail.php",
+      		 "http://josie.i3.com.hk/FG/json/garage_to_fav.php",
                params,
                new RequestCallBack<String>() {
     				@Override
@@ -222,7 +236,9 @@ public class chefangActivity extends FragmentActivity {
     						 int  num_code=Integer.valueOf(string_code);
     						 if (num_code==1) {
     							 //保存到本地
-    					
+								 Toast.makeText(getApplicationContext(),msg, 0).show();
+									progressBar_sale.setVisibility(View.GONE);
+
     						 }
     						
     						 else {
@@ -231,7 +247,6 @@ public class chefangActivity extends FragmentActivity {
     							//new AlertInfoDialog(SaleActivity.this).show();
     						}
     					} catch (JSONException e) {
-    						//new Dialog_noInternet(SaleActivity.this).show();
     						progressBar_sale.setVisibility(View.GONE);
     						 Toast.makeText(getApplicationContext(),msg, 0).show();
     						e.printStackTrace();

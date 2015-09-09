@@ -25,6 +25,7 @@ import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
@@ -53,12 +54,6 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 
 public class WoDeCheFangActivity extends FragmentActivity {
 
-	private ViewPager vp;
-	private RadioGroup rg1;
-	private RadioButton rb1;
-	private RadioButton rb2;
-	private RadioButton rb3;
-	private ArrayList<Fragment> list;
 	private ImageView mIvtt1;
 	private com.example.view.MyListView mLv1;
 	private ProgressBar progressBar_sale;
@@ -69,6 +64,7 @@ public class WoDeCheFangActivity extends FragmentActivity {
 	protected ImageLoader imageLoader = ImageLoader.getInstance();
 	private ImageView mIvNn1;
 	private RelativeLayout mRlNn1;
+	private String UserID;
 
 	@SuppressLint("ResourceAsColor")
 	@Override
@@ -76,6 +72,10 @@ public class WoDeCheFangActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.wodechefang);
+		SharedPreferences sharedPreferences=getSharedPreferences("USER", 
+				Activity.MODE_PRIVATE); 
+		  UserID = sharedPreferences.getString("UserID", ""); 
+
 		mIvtt1 =(ImageView)this.findViewById(R.id.mIvtt1);
 		mIvtt1.setOnClickListener(listener);
 		mLv1 =(com.example.view.MyListView)this.findViewById(R.id.mLv1);
@@ -89,6 +89,87 @@ public class WoDeCheFangActivity extends FragmentActivity {
 		mRlNn1 =(RelativeLayout)this.findViewById(R.id.mRlNn1);
 		mRlNn1.setVisibility(View.GONE);
 	}
+	
+	
+
+private void initData1() {
+	downloadsearch1("0");
+}
+
+public void downloadsearch1(String area11){
+	progressBar_sale.setVisibility(View.VISIBLE);
+
+	 RequestParams params = new RequestParams();
+   List<NameValuePair> nameValuePairs=new ArrayList<NameValuePair>(10);
+   nameValuePairs.add(new BasicNameValuePair("UserID",UserID));
+   
+   params.addBodyParameter(nameValuePairs);
+   HttpUtils http = new HttpUtils();
+   http.send(HttpRequest.HttpMethod.POST,
+  		 "http://josie.i3.com.hk/FG/json/m_garage.php",
+           params,
+           new RequestCallBack<String>() {
+
+				private String GarageID;
+				private String GarageTitle;
+				private String GarageRemark;
+				private String GaragePhoto;
+
+				@Override
+				public void onFailure(HttpException arg0, String arg1) {
+					// TODO Auto-generated method stub
+					
+				}
+
+				@Override
+				public void onSuccess(ResponseInfo<String> arg0) {
+					JSONObject jsonObject;
+					try {
+						jsonObject = new JSONObject(arg0.result);
+						String string_code = jsonObject.getString("code");
+						String msg = jsonObject.getString("msg");
+						
+						 int  num_code=Integer.valueOf(string_code);
+						 if (num_code==1) {
+							 //保存到本地
+							 JSONObject array = jsonObject.getJSONObject("data");
+								progressBar_sale.setVisibility(View.GONE);
+								 GarageID = array.getString("GarageID");
+								 GarageTitle = array.getString("GarageTitle");
+								 GarageRemark = array.getString("GarageRemark");
+								 GaragePhoto = array.getString("GaragePhoto");
+									initImageLoaderOptions();
+									imageLoader.displayImage(GaragePhoto,
+											mIvNn1, options);
+
+						 /**
+						  * {"code":"1","msg":"Login success","data":{"UserID":"2","LoginName":"ljppff","UserEmail":"ljppff@163.com","UserName":"","UserGender":"1","UserBirtyYear":""}}
+						  */
+						 }
+						
+						 else {
+								 Toast.makeText(getApplicationContext(),msg, 0).show();
+									progressBar_sale.setVisibility(View.GONE);
+
+							//new AlertInfoDialog(SaleActivity.this).show();
+						}
+					} catch (JSONException e) {
+						//new Dialog_noInternet(SaleActivity.this).show();
+						progressBar_sale.setVisibility(View.GONE);
+
+							 Toast.makeText(getApplicationContext(),  getResources().getString(R.string.abc36), 0).show();
+						e.printStackTrace();
+					}
+						
+				
+					
+				}
+
+			
+     
+   });
+}
+   
 	
 	
 	private void initData() {

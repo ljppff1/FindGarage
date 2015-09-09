@@ -103,7 +103,7 @@
           <string name="az4">請選擇</string>
           <string name="az5">會員名稱</string>
           <string name="az6">2至18個字，必須包含最少壹個中文字/英文字母</string>
-          <string name="az7">姓名</string>
+          <string name="az7">登入名</string>
           <string name="az8">必須確認</string>
           <string name="az9">密碼</string>
           <string name="az11">6至20個字符</string>
@@ -181,5 +181,6 @@
 <string name="abca2c2">环境</string>
 <string name="abca2c3">服务</string>
 <string name="abca2c4">周边</string>
+<string name="abca2c5">注销</string>
 
 </resources>

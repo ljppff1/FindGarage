@@ -23,9 +23,11 @@ import com.example.wfindgarage.tuiguangyouhuiActivity;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.media.ThumbnailUtils;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -142,9 +144,19 @@ public class HorizontalListViewAdapter extends BaseAdapter{
 
 
                 if(position==2){
+            		SharedPreferences sharedPreferences=mContext.getSharedPreferences("USER", 
+            				Activity.MODE_PRIVATE); 
+            		 String UserID = sharedPreferences.getString("UserID", ""); 
+            	     if(!TextUtils.isEmpty(UserID)){
+
 	            	 Intent intent =new Intent(mContext, WoDeCheFangActivity.class);
 	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	             mContext.startActivity(intent);
+            	     }else{
+    	            	 Intent intent =new Intent(mContext, huiyuandengluActivity.class);
+    	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    	             mContext.startActivity(intent);
+            	     }
                 }
                 if(position==3){
 	            	 Intent intent =new Intent(mContext, NewDiscussActivity.class);
