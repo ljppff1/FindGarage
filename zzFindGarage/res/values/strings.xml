@@ -169,18 +169,41 @@
 <string name="abc41">请输入登入电邮</string>
 <string name="abc42">请输入姓名</string>
 <string name="abc43">请输入密码</string>
-<string name="abc44">注册成功</string>
+<string name="abc44">註冊成功</string>
 <string name="abca1">分享</string>
 <string name="abca2">收藏</string>
-<string name="abca3">写评论</string>
+<string name="abca3">寫評論</string>
 <string name="abca4">提供新照片</string>
 <string name="abca2a">收藏成功</string>
 <string name="abca2b">完成</string>
-<string name="abca2c">评分</string>
-<string name="abca2c1">品质</string>
-<string name="abca2c2">环境</string>
-<string name="abca2c3">服务</string>
-<string name="abca2c4">周边</string>
-<string name="abca2c5">注销</string>
+<string name="abca2c">評分</string>
+<string name="abca2c1">品質</string>
+<string name="abca2c2">環境</string>
+<string name="abca2c3">服務</string>
+<string name="abca2c4">周邊</string>
+<string name="abca2c5">註銷</string>
+
+
+<string name="ze1">評論</string>
+<string name="ze2">評分*</string>
+<string name="ze3">請填寫內容</string>
+<string name="ze4">請填寫車房途徑</string>
+<string name="ze5">常用分類</string>
+<string name="ze6">分類</string>
+<string name="ze7">主頁</string>
+<string name="ze8">贊FACEBOOK專業</string>
+<string name="ze9">我的FindGarage</string>
+<string name="ze11">請輸入名稱</string>
+<string name="ze12">請輸入電郵</string>
+<string name="ze13">請輸入名稱</string>
+<string name="ze14">請輸入內容</string>
+
+<string name="ze15">評論內容</string>
+<string name="ze16">評論標題</string>
+<string name="ze17">請輸入評論標題</string>
+<string name="ze18">請輸入評論內容</string>
+<string name="ze19">添加圖片</string>
+<string name="ze20">最多上傳三張圖片，可點擊刪除已選擇的圖片！</string>
+
 
 </resources>

@@ -13,8 +13,13 @@
     android:layout_width="fill_parent"
     android:layout_height="55dp"
     android:layout_alignParentBottom="true"
-    android:background="@drawable/ab8"
     >
+    <ImageView 
+            android:src="@drawable/ab8"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+          android:scaleType="fitXY"
+        />
     <LinearLayout 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -343,6 +348,7 @@
          android:layout_centerVertical="true"
          android:paddingLeft="5dp"
              />
+         
         <ImageView
        android:layout_width="34dp"
         android:layout_height="34dp"
@@ -350,9 +356,14 @@
          android:paddingRight="5dp"
          android:layout_centerVertical="true"
          android:layout_alignParentRight="true"
-       
+       android:id="@+id/mIv111"
              />
-        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/mIv111"
+            android:id="@+id/mV1"
+            />
         <TextView 
                     android:layout_width="wrap_content"
         android:layout_height="wrap_content"

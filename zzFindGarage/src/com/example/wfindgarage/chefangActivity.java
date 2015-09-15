@@ -181,7 +181,10 @@ public class chefangActivity extends FragmentActivity {
 			case R.id.mRlpw4:
 				break;
 			case R.id.mRlpw3:	
-			startActivity(new Intent(getApplicationContext(), PingFenActivity.class));
+				Intent intent =new Intent(getApplicationContext(), XiePinLunActivity.class);
+				intent.putExtra("GarageTitle", GarageTitle);
+				
+			startActivity(intent);
 				break;
 			case R.id.mRlpw2:	
         		SharedPreferences sharedPreferences=getSharedPreferences("USER", 
@@ -193,6 +196,9 @@ public class chefangActivity extends FragmentActivity {
     	             startActivity(new Intent(getApplicationContext(), huiyuandengluActivity.class));
         	     }
 				break;
+			case R.id.mIvwww1:
+				break;
+				
 			case R.id.mRlpw1:				
 				break;
 			default:
@@ -363,6 +369,8 @@ public void downloadsearch(String area11){
 
 
 
+			private ImageView mIvwww1;
+
 			public SelectPicPopupWindow(Activity context,OnClickListener itemsOnClick) {
 				super(context);
 				LayoutInflater inflater = (LayoutInflater) context
@@ -372,6 +380,8 @@ public void downloadsearch(String area11){
 				mRlpw3 = (RelativeLayout) mMenuView.findViewById(R.id.mRlpw3);
 				mRlpw2 = (RelativeLayout) mMenuView.findViewById(R.id.mRlpw2);
 				mRlpw1 = (RelativeLayout) mMenuView.findViewById(R.id.mRlpw1);
+				mIvwww1 =(ImageView)mMenuView.findViewById(R.id.mIvwww1);
+				mIvwww1.setOnClickListener(itemsOnClick);
 				mRlpw1.setOnClickListener(itemsOnClick);
 				mRlpw2.setOnClickListener(itemsOnClick);
 				mRlpw3.setOnClickListener(itemsOnClick);
@@ -379,7 +389,7 @@ public void downloadsearch(String area11){
 				//设置SelectPicPopupWindow的View
 				this.setContentView(mMenuView);
 				//设置SelectPicPopupWindow弹出窗体的宽
-				this.setWidth(LayoutParams.WRAP_CONTENT);
+				this.setWidth(LayoutParams.FILL_PARENT);
 				//设置SelectPicPopupWindow弹出窗体的高
 				this.setHeight(LayoutParams.WRAP_CONTENT);
 				//设置SelectPicPopupWindow弹出窗体可点击

@@ -129,6 +129,8 @@ public class HorizontalListViewAdapter extends BaseAdapter{
 		});
 		holder.mImage.setOnClickListener(new OnClickListener() {
 			
+			private String UserID;
+
 			@Override
 			public void onClick(View v) {
 	             if(position==0){
@@ -146,7 +148,7 @@ public class HorizontalListViewAdapter extends BaseAdapter{
                 if(position==2){
             		SharedPreferences sharedPreferences=mContext.getSharedPreferences("USER", 
             				Activity.MODE_PRIVATE); 
-            		 String UserID = sharedPreferences.getString("UserID", ""); 
+            		  UserID = sharedPreferences.getString("UserID", ""); 
             	     if(!TextUtils.isEmpty(UserID)){
 
 	            	 Intent intent =new Intent(mContext, WoDeCheFangActivity.class);
@@ -157,6 +159,7 @@ public class HorizontalListViewAdapter extends BaseAdapter{
     	            	 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     	             mContext.startActivity(intent);
             	     }
+            	     
                 }
                 if(position==3){
 	            	 Intent intent =new Intent(mContext, NewDiscussActivity.class);

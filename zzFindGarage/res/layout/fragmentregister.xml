@@ -28,16 +28,16 @@
          android:textSize="22sp"
          android:textColor="@color/black"
          android:layout_gravity="center"
-         android:layout_marginLeft="4dp"
+         android:layout_marginLeft="14dp"
          android:text="@string/az1"
          />
      <EditText 
          android:layout_width="0dp"
          android:layout_weight="2.5"
          android:textSize="13sp"
-         android:background="@null"
+       
          android:id="@+id/mEtfr1"
-         android:paddingRight="4dp"
+         android:paddingRight="14dp"
          android:textColor="@color/black"
          android:layout_gravity="center_vertical"
          android:gravity="right"
@@ -65,7 +65,7 @@
          android:textColor="@color/black"
          
          android:layout_gravity="center"
-         android:layout_marginLeft="4dp"
+         android:layout_marginLeft="14dp"
          android:text="@string/az3"
          />
           <TextView 
@@ -78,7 +78,7 @@
          android:textColor="@color/black"
          android:id="@+id/mTvreg1"
          android:layout_gravity="center"
-         android:layout_marginLeft="4dp"
+         android:layout_marginLeft="14dp"
          android:text="@string/az4"
          />
  </LinearLayout>
@@ -102,15 +102,15 @@
          android:textSize="22sp"
          android:textColor="@color/black"
          android:layout_gravity="center"
-         android:layout_marginLeft="4dp"
+         android:layout_marginLeft="14dp"
          android:text="@string/az5"
          />
      <EditText 
          android:layout_width="0dp"
          android:layout_weight="2.5"
          android:textSize="13sp"
-         android:background="@null"
-         android:paddingRight="4dp"
+       
+         android:paddingRight="14dp"
          android:layout_gravity="center_vertical"
          android:gravity="right"
                   android:textColor="@color/black"
@@ -139,15 +139,15 @@
          android:textSize="22sp"
          android:textColor="@color/black"
          android:layout_gravity="center"
-         android:layout_marginLeft="4dp"
+         android:layout_marginLeft="14dp"
          android:text="@string/az7"
          />
      <EditText 
          android:layout_width="0dp"
          android:layout_weight="2.5"
          android:textSize="13sp"
-         android:background="@null"
-         android:paddingRight="4dp"
+       
+         android:paddingRight="14dp"
          android:layout_gravity="center_vertical"
          android:gravity="right"
                   android:id="@+id/mEtfr3"
@@ -176,15 +176,15 @@
          android:textSize="22sp"
          android:textColor="@color/black"
          android:layout_gravity="center"
-         android:layout_marginLeft="4dp"
+         android:layout_marginLeft="14dp"
          android:text="@string/az9"
          />
      <EditText 
          android:layout_width="0dp"
          android:layout_weight="2.5"
          android:textSize="13sp"
-         android:background="@null"
-         android:paddingRight="4dp"
+       
+         android:paddingRight="14dp"
                   android:id="@+id/mEtfr4"
          android:layout_gravity="center_vertical"
          android:gravity="right"
@@ -215,7 +215,7 @@
          android:textColor="@color/black"
          
          android:layout_gravity="center"
-         android:layout_marginLeft="4dp"
+         android:layout_marginLeft="14dp"
          android:text="@string/az12"
          />
           <TextView 
@@ -228,7 +228,7 @@
          android:paddingRight="20dp"
          android:textColor="@color/black"
          android:layout_gravity="center"
-         android:layout_marginLeft="4dp"
+         android:layout_marginLeft="14dp"
          android:text="@string/az13"
          />
  </LinearLayout>

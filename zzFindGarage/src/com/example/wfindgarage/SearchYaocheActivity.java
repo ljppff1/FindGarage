@@ -68,6 +68,8 @@ public class SearchYaocheActivity extends Activity {
 	private Button mBtn2;
 	private EditText mEtnn5;
 	private String item_second;
+	private View mV1;
+	private View mV2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -88,12 +90,11 @@ public class SearchYaocheActivity extends Activity {
 		mBtn1.setOnClickListener(listener);
 		mBtn2.setOnClickListener(listener);
 		mEtnn5 =(EditText)this.findViewById(R.id.mEtnn5);
-		
 		mRlnn1 =(RelativeLayout)this.findViewById(R.id.mRlnn1);
 		mRlNn3 =(RelativeLayout)this.findViewById(R.id.mRlNn3);
 		mTVnn1 =(TextView)this.findViewById(R.id.mTVnn1);
 		mTVnn2 =(TextView)this.findViewById(R.id.mTVnn2);
-		
+		mV1 =this.findViewById(R.id.mV1);
 	}
 	
 	
@@ -101,6 +102,9 @@ public class SearchYaocheActivity extends Activity {
 		@Override
 		public void onClick(View v) {
 			switch (v.getId()) {
+			case R.id.mV2:
+           	 popupWindow.dismiss();  
+				break;
 			case R.id.mIvtt1:
 				finish();
 				break;
@@ -138,7 +142,6 @@ public class SearchYaocheActivity extends Activity {
 	private PopupWindow popupWindow;
 	private View view;
 	private ListView mLvp1;
-	private EditText mEtp1;
 	private ProgressBar progressBar_sale;
 	private Myadapter myadapter;
 	private ProgressBar progressBar_salew1;
@@ -148,10 +151,13 @@ public class SearchYaocheActivity extends Activity {
 		//找到设置好的layout
 		 view = LayoutInflater.from(SearchYaocheActivity.this).inflate(R.layout.popup, null);
 		     float scale =getResources().getDisplayMetrics().density;  
+				mV2 =(View)view.findViewById(R.id.mV2);
+				mV2.setOnClickListener(listener);
 
 				// TODO Auto-generated method stub
 				int screenWidth = SearchYaocheActivity.this.getWindowManager().getDefaultDisplay().getWidth()-mRlnn1.getWidth(); 
-			    int screenHeigh = (int) (SearchYaocheActivity.this.getWindowManager().getDefaultDisplay().getHeight()-   ((int) scale*100+0.5f)); 
+				  //  int screenHeigh = (int) (SearchYaocheActivity.this.getWindowManager().getDefaultDisplay().getHeight()-   ((int) scale*100+0.5f)); 
+				    int screenHeigh = (int) (SearchYaocheActivity.this.getWindowManager().getDefaultDisplay().getHeight()); 
 				
 			    View downView = (RelativeLayout)view.findViewById(R.id.mLayout);
 			    //启动popupWindow；
@@ -168,14 +174,15 @@ public class SearchYaocheActivity extends Activity {
 					// popupWindow.showAtLocation(downView, Gravity.BOTTOM, 0, 0); 
 					// popupWindow.showAsDropDown(bt);
 					  int[] location = new int[2];  
+					  int[] location1 = new int[2];  
 					  mRlnn1.getLocationOnScreen(location);  
-					 popupWindow.showAtLocation(findViewById(R.id.mRlnnpar1), Gravity.NO_GRAVITY, location[0]+mRlnn1.getWidth(), location[1]);  
+					  mV1.getLocationOnScreen(location1);
+					 popupWindow.showAtLocation(findViewById(R.id.mRlnnpar1), Gravity.BOTTOM, location[0]+mRlnn1.getWidth(), location[1]);  
 					 popupWindow.setAnimationStyle(R.style.PopupAnimation);
 					 popupWindow.update();
-					 mLvp1 =(ListView)downView.findViewById(R.id.mLvp1);
+					 mLvp1 =(ListView)view.findViewById(R.id.mLvp1);
 					 //mEtp1 =(EditText)downView.findViewById(R.id.mEtp1);
-					 
-					 progressBar_salew1 =(ProgressBar)downView.findViewById(R.id.progressBar_sale);
+					 progressBar_salew1 =(ProgressBar)view.findViewById(R.id.progressBar_sale);
 					 if(i1==1){
 					 downloadsearchw1("");
                   }

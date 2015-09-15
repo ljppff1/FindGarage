@@ -50,7 +50,13 @@
         <activity android:name="com.example.wfindgarage.TiGongCheFangZiLiaoActivity"></activity>
         <activity android:name="com.example.wfindgarage.SearchResultActivity"></activity>
         <activity android:name="com.example.wfindgarage.PingFenActivity"></activity>
+        <activity android:name="com.example.wfindgarage.XiePinLunActivity"></activity>
+        <activity android:name="com.example.wfindgarage.WoDeYouHuiActivity"></activity>
+        <activity android:name="com.example.wfindgarage.WoDeShouCangActivity"></activity>
+        <activity android:name="com.example.wfindgarage.PinLunXiangQingActivity"></activity>
         
-    </application>
+        
+        
+            </application>
 
 </manifest>

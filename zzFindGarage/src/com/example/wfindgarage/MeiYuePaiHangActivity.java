@@ -74,6 +74,8 @@ public class MeiYuePaiHangActivity extends Activity {
 	private ScrollView mSvmy1;
 
 	private RelativeLayout mRlmy2;
+
+	private ImageView mIvwhat1;
 	@SuppressLint("ResourceAsColor")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -83,11 +85,15 @@ public class MeiYuePaiHangActivity extends Activity {
 		
 		mIvtt1 =(ImageView)this.findViewById(R.id.mIvtt1);
 		mIvtt1.setOnClickListener(listener);
+		mIvwhat1=(ImageView)this.findViewById(R.id.mIvwhat1);
+		mIvwhat1.setOnClickListener(listener);
+		
 		mGvMy1 =(com.example.view.MyGridView)this.findViewById(R.id.mGvMy1);
 		mSvmy1 =(ScrollView)this.findViewById(R.id.mSvmy1);
 		mGvMy1.setFocusable(false);
 		initData();
 		mRlmy1 =(RelativeLayout)this.findViewById(R.id.mRlmy1);
+		mRlmy1.setOnClickListener(listener);
 		progressBar_sale =(ProgressBar)this.findViewById(R.id.progressBar_sale);
 		progressBar_sale.setVisibility(View.VISIBLE);
 		mRlmy1.setVisibility(View.GONE);
@@ -103,12 +109,10 @@ public class MeiYuePaiHangActivity extends Activity {
 	public void downloadsearch(String area11){
 		 RequestParams params = new RequestParams();
 	   List<NameValuePair> nameValuePairs=new ArrayList<NameValuePair>(10);
-	   nameValuePairs.add(new BasicNameValuePair("PropertyLocation", area11));
-	   nameValuePairs.add(new BasicNameValuePair("RentSale", "1"));
 	   params.addBodyParameter(nameValuePairs);
 	   HttpUtils http = new HttpUtils();
 	   http.send(HttpRequest.HttpMethod.POST,
-	  		 com.example.utils.Content.URL_Search,
+	  		 "http://josie.i3.com.hk/FG/json/garage_rank.php",
 	           params,
 	           new RequestCallBack<String>() {
 
@@ -137,14 +141,9 @@ public class MeiYuePaiHangActivity extends Activity {
 									  Data  data=new Data();
 									  
 									 JSONObject jsonObject2 = array.getJSONObject(i);
-									 data.ID= jsonObject2.getString("ID");
-									 data.Name= jsonObject2.getString("Name");
-									 data.StreetName = jsonObject2.getString("StreetName");
-									 data.AreaGross=jsonObject2.getString("AreaGross");
-									 data.AreaNet=jsonObject2.getString("AreaNet");
-									 data.CoverPic=jsonObject2.getString("CoverPic");
-									 data.SellingPrice=jsonObject2.getString("SellingPrice");
-									 data.RentPrice=jsonObject2.getString("RentPrice");
+									 data.Name=jsonObject2.getString("GarageTitle");
+									 data.ID= jsonObject2.getString("GarageID");
+									 data.CoverPic=jsonObject2.getString("GaragePhoto");
 									 mDataList_origin.add(data);
 									 
 			                          data.toString();						 
@@ -152,8 +151,18 @@ public class MeiYuePaiHangActivity extends Activity {
 								  mDataList.clear();
 								  mDataList.addAll(mDataList_origin);
 									progressBar_sale.setVisibility(View.GONE);
-									mRlmy1.setVisibility(View.VISIBLE);
+								
+								  if(mDataList.size()>=1){
+								  mRlmy1.setVisibility(View.VISIBLE);
+									initImageLoaderOptions();
+									imageLoader.displayImage(mDataList.get(0).CoverPic,
+											mIvwhat1, options);
+
+								  }
+								  if(mDataList.size()>1){
 								  initListView();
+								  }
+								  
 							}
 							 else {
 								//new AlertInfoDialog(SaleActivity.this).show();
@@ -181,7 +190,9 @@ public class MeiYuePaiHangActivity extends Activity {
 				@Override
 				public void onItemClick(AdapterView<?> parent,
 						View view, int position, long id) {
-					startActivity(new Intent(getApplicationContext(), chefangActivity.class));
+					Intent intent =new Intent(getApplicationContext(), chefangActivity.class);
+					intent.putExtra("GarageID", mDataList.get(position+1).ID);
+					startActivity(intent);
 				}
 			});
 	    
@@ -217,9 +228,9 @@ public class MeiYuePaiHangActivity extends Activity {
 				holder =(Holder)convertView.getTag();
 			}
             holder.mTvri12.setText((position+2)+"");
-			holder.mTvri11.setText(mDataList.get(position).Name);
+			holder.mTvri11.setText(mDataList.get(position+1).Name);
 			initImageLoaderOptions();
-			imageLoader.displayImage(mDataList.get(position).CoverPic,
+			imageLoader.displayImage(mDataList.get(position+1).CoverPic,
 					holder.imageView, options);
 			
 			return convertView;
@@ -228,7 +239,7 @@ public class MeiYuePaiHangActivity extends Activity {
 		@Override
 		public int getCount() {
 			// TODO Auto-generated method stub
-			return mDataList.size();
+			return mDataList.size()-1;
 		}
 		@Override
 		public Object getItem(int position) {
@@ -269,8 +280,10 @@ public class MeiYuePaiHangActivity extends Activity {
 			case R.id.mIvtt1:
 				finish();
 				break;
-			case R.id.mRlmy2:
-				startActivity(new Intent(getApplicationContext(), chefangActivity.class));
+			case R.id.mIvwhat1:
+				Intent intent =new Intent(getApplicationContext(), chefangActivity.class);
+				intent.putExtra("GarageID", mDataList.get(0).ID);
+				startActivity(intent);
 				break;
 
 			default:

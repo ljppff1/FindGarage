@@ -74,7 +74,7 @@
          android:layout_width="0dp"
          android:layout_weight="2"
          android:textSize="13sp"
-         android:background="@null"
+         
          android:paddingRight="4dp"
          android:textColor="@color/black"
          android:layout_gravity="center_vertical"
@@ -110,9 +110,9 @@
          android:layout_width="0dp"
          android:layout_weight="2"
          android:textSize="13sp"
-         android:background="@null"
-                  android:textColor="@color/black"
          
+                  android:textColor="@color/black"
+         android:hint="@string/ze4"
          android:paddingRight="4dp"
          android:layout_gravity="center_vertical"
          android:gravity="right"
@@ -142,15 +142,18 @@
          android:layout_marginLeft="4dp"
          android:text="@string/bc8"
          />
-     <TextView 
+     <EditText 
          android:layout_width="0dp"
          android:layout_weight="2"
          android:textSize="13sp"
+         
          android:paddingRight="4dp"
          android:layout_gravity="center_vertical"
          android:gravity="right"
-         android:drawableRight="@drawable/bd2"
+                  android:textColor="@color/black"
+         
          android:layout_height="wrap_content"
+         android:hint="@string/ze3"
          />
  </LinearLayout>
   <View 
@@ -164,9 +167,11 @@
      android:layout_height="wrap_content"
      android:paddingTop="18dp"
      android:paddingBottom="18dp"
+          android:id="@+id/mWhatbad"
+     
      android:background="@color/myloginb"
      >
-     <TextView 
+          <TextView 
          android:layout_width="0dp"
          android:layout_weight="1.3"
          android:layout_height="wrap_content"
@@ -174,21 +179,19 @@
          android:textColor="@color/black"
          android:layout_gravity="center"
          android:layout_marginLeft="4dp"
-         android:text="@string/bc9"
+         android:text="@string/ze2"
          />
-     <EditText 
+     <TextView 
          android:layout_width="0dp"
          android:layout_weight="2"
          android:textSize="13sp"
-         android:background="@null"
          android:paddingRight="4dp"
          android:layout_gravity="center_vertical"
          android:gravity="right"
-                  android:textColor="@color/black"
-         
+         android:drawableRight="@drawable/bd2"
          android:layout_height="wrap_content"
-         android:hint="@string/bc11"
          />
+
  </LinearLayout>
   <View 
      android:layout_width="fill_parent"
@@ -217,7 +220,7 @@
          android:layout_width="0dp"
          android:layout_weight="2"
          android:textSize="13sp"
-         android:background="@null"
+         
          android:paddingRight="4dp"
          android:layout_gravity="center_vertical"
          android:gravity="right"
@@ -239,6 +242,7 @@
      android:paddingTop="18dp"
      android:paddingBottom="18dp"
      android:background="@color/myloginb"
+     android:visibility="gone"
      >
      <TextView 
          android:layout_width="0dp"

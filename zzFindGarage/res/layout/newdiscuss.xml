@@ -37,6 +37,7 @@
             <RelativeLayout
                                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:id="@+id/mRl1"
                 android:layout_height="fill_parent"
                  >
                             <TextView 
@@ -57,6 +58,8 @@
             <RelativeLayout
                                 android:layout_width="0dp"
                 android:layout_weight="1"
+                                android:id="@+id/mRl2"
+                
                 android:layout_height="fill_parent"
                  >
             <ImageView 
@@ -75,6 +78,8 @@
                  <RelativeLayout
                                 android:layout_width="0dp"
                 android:layout_weight="1"
+                                android:id="@+id/mRl3"
+                
                 android:layout_height="fill_parent"
                  >
             <ImageView 
@@ -148,6 +153,7 @@
        <RelativeLayout 
            android:layout_width="fill_parent"
              android:layout_height="30dp"
+             android:visibility="gone"
            android:background="@color/gray1"
            >
                     <TextView 

@@ -8,10 +8,12 @@ import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class TiGongCheFangZiLiaoActivity extends Activity {
 
 	private ImageView mIvtt1;
+	private LinearLayout mWhatbad;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,6 +21,8 @@ public class TiGongCheFangZiLiaoActivity extends Activity {
 		setContentView(R.layout.tigongchefangziliao);
 		mIvtt1 =(ImageView)this.findViewById(R.id.mIvtt1);
 		mIvtt1.setOnClickListener(listener);
+		mWhatbad=(LinearLayout)this.findViewById(R.id.mWhatbad);
+		mWhatbad.setOnClickListener(listener);
 
 	
 	}
@@ -31,6 +35,9 @@ public class TiGongCheFangZiLiaoActivity extends Activity {
 			switch (v.getId()) {
 			case R.id.mIvtt1:
 				finish();
+				break;
+			case R.id.mWhatbad:
+				startActivity(new Intent(getApplicationContext(), PingFenActivity.class));
 				break;
 
 			default:

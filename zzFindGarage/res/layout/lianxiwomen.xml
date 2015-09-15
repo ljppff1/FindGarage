@@ -66,16 +66,18 @@
          android:layout_marginLeft="6dp"
          android:text="@string/bz2"
          />
-          <TextView 
+         <EditText 
          android:layout_width="0dp"
          android:layout_weight="2.5"
-         android:layout_height="wrap_content"
-          android:gravity="right"
          android:textSize="13sp"
-         android:paddingRight="20dp"
+       
+         android:id="@+id/mEtfr1"
+         android:paddingRight="14dp"
          android:textColor="@color/black"
-         android:layout_gravity="center"
-         android:layout_marginLeft="6dp"
+         android:layout_gravity="center_vertical"
+         android:gravity="right"
+         android:layout_height="wrap_content"
+         android:hint="@string/ze11"
          />
  </LinearLayout>
                          
@@ -102,16 +104,18 @@
          android:layout_marginLeft="6dp"
          android:text="@string/bz4"
          />
-          <TextView 
+         <EditText 
          android:layout_width="0dp"
          android:layout_weight="2.5"
-         android:layout_height="wrap_content"
-          android:gravity="right"
          android:textSize="13sp"
-         android:paddingRight="20dp"
+       
+         android:id="@+id/mEtfr2"
+         android:paddingRight="14dp"
          android:textColor="@color/black"
-         android:layout_gravity="center"
-         android:layout_marginLeft="6dp"
+         android:layout_gravity="center_vertical"
+         android:gravity="right"
+         android:layout_height="wrap_content"
+         android:hint="@string/ze12"
          />
  </LinearLayout>
                       <View 
@@ -146,9 +150,10 @@
          android:textSize="13sp"
          android:paddingRight="20dp"
          android:textColor="@color/black"
+         android:id="@+id/mTvreg1"
          android:layout_gravity="center"
-         android:layout_marginLeft="6dp"
-         android:text="@string/bz7"
+         android:layout_marginLeft="14dp"
+         android:text="@string/az4"
          />
  </LinearLayout>     <View 
          android:layout_width="fill_parent"
@@ -175,18 +180,20 @@
          android:layout_marginLeft="6dp"
          android:text="@string/bz8"
          />
-          <TextView 
+                   <EditText 
          android:layout_width="0dp"
          android:layout_weight="2.5"
-         android:layout_height="wrap_content"
-          android:gravity="right"
          android:textSize="13sp"
-         android:paddingRight="20dp"
+       
+         android:id="@+id/mEtfr3"
+         android:paddingRight="14dp"
          android:textColor="@color/black"
-         android:layout_gravity="center"
-         android:layout_marginLeft="6dp"
-         android:text="@string/bz9"
+         android:layout_gravity="center_vertical"
+         android:gravity="right"
+         android:layout_height="wrap_content"
+         android:hint="@string/ze14"
          />
+
  </LinearLayout>
                            <View 
          android:layout_width="fill_parent"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@drawable/ttt1"
+    android:background="@drawable/ttt3"
     android:layout_height="wrap_content" >
 
     <RelativeLayout
@@ -72,13 +72,19 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     >
+                    <ImageView 
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/mIvll3"
+                        android:src="@drawable/af3"
+                        />
                            <TextView 
               android:text="@string/ab4"
               android:textSize="20sp"
-              android:drawableLeft="@drawable/af3"
               android:textColor="@color/black"
               android:id="@+id/mTvri12"
-              android:gravity="center"
+              android:layout_marginLeft="3dp"
+              android:layout_toRightOf="@id/mIvll3"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
                   
