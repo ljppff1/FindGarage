@@ -54,6 +54,8 @@
         <activity android:name="com.example.wfindgarage.WoDeYouHuiActivity"></activity>
         <activity android:name="com.example.wfindgarage.WoDeShouCangActivity"></activity>
         <activity android:name="com.example.wfindgarage.PinLunXiangQingActivity"></activity>
+        <activity android:name="com.example.wfindgarage.PinLunXiangQing1Activity"></activity>
+        <activity android:name="com.example.wfindgarage.tuiguangyouhuigActivity"></activity>
         
         
         

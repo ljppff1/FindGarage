@@ -52,7 +52,7 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-public class WoDeCheFangDetailActivity extends FragmentActivity {
+public class WoDeCheFangDetailActivity extends BaseActivity {
 
 	private ImageView mIvtt1;
 

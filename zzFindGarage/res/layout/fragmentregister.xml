@@ -37,9 +37,7 @@
          android:textSize="13sp"
        
          android:id="@+id/mEtfr1"
-         android:paddingRight="14dp"
          android:textColor="@color/black"
-         android:layout_gravity="center_vertical"
          android:gravity="right"
          android:layout_height="wrap_content"
          android:hint="@string/az2"
@@ -146,10 +144,6 @@
          android:layout_width="0dp"
          android:layout_weight="2.5"
          android:textSize="13sp"
-       
-         android:paddingRight="14dp"
-         android:layout_gravity="center_vertical"
-         android:gravity="right"
                   android:id="@+id/mEtfr3"
          android:layout_height="wrap_content"
          android:hint="@string/az8"
@@ -183,11 +177,7 @@
          android:layout_width="0dp"
          android:layout_weight="2.5"
          android:textSize="13sp"
-       
-         android:paddingRight="14dp"
                   android:id="@+id/mEtfr4"
-         android:layout_gravity="center_vertical"
-         android:gravity="right"
                   android:textColor="@color/black"
          
          android:inputType="textPassword"

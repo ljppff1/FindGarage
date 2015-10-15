@@ -6,54 +6,25 @@
         android:layout_height="fill_parent"
         android:background="@color/mylo1"
         >
-<ScrollView 
+    
+    
+        
+        
+  
+        <ScrollView 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true"
+    android:layout_marginTop="40dp"
     >
 <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical" 
->
+>   
 
     
     
-        
-        
-        <RelativeLayout 
-    android:layout_width="fill_parent"
-    android:layout_height="50dp"
-    android:background="@drawable/ttb5"
-    >
-         <ImageView
-       android:layout_width="34dp"
-        android:layout_height="34dp"
-        android:id="@+id/mIvtt1"
-         android:src="@drawable/ee1"
-         android:layout_centerVertical="true"
-         android:paddingLeft="5dp"
-             />
-        <ImageView
-       android:layout_width="34dp"
-        android:layout_height="34dp"
-         android:src="@drawable/ee2"
-         android:paddingRight="5dp"
-         android:layout_centerVertical="true"
-         android:layout_alignParentRight="true"
-       
-             />
-        
-        <TextView 
-                    android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:textSize="25sp"
-            android:drawableBottom="@drawable/ttb4"
-            android:text="@string/b5"
-            android:textColor="@color/white"
-            />
-    </RelativeLayout>
         
         <RelativeLayout 
             android:layout_width="fill_parent"
@@ -83,6 +54,7 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 />
+            
         </RelativeLayout>  
         <RelativeLayout 
             android:layout_width="fill_parent"
@@ -333,4 +305,74 @@
       
 </LinearLayout>
 </ScrollView>
+
+     
+           <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="10dp"
+                        android:layout_marginTop="40dp"
+        
+        android:id="@+id/mRlzz1"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            
+            >
+            <View 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                />
+            <View 
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:background="@color/mycolor11"
+                android:layout_height="fill_parent"
+                />
+                        <View 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                />
+            </LinearLayout>
+        
+        
+    </RelativeLayout>
+          <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/ttb5"
+    >
+         <ImageView
+       android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:id="@+id/mIvtt1"
+         android:src="@drawable/ee1"
+         android:layout_centerVertical="true"
+         android:paddingLeft="5dp"
+             />
+        <ImageView
+       android:layout_width="34dp"
+        android:layout_height="34dp"
+         android:src="@drawable/ee2"
+         android:paddingRight="5dp"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+       
+             />
+        
+        <TextView 
+                    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:drawableBottom="@drawable/ttb4"
+            android:text="@string/b5"
+            android:id="@+id/mTvfjc1"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
 </RelativeLayout>

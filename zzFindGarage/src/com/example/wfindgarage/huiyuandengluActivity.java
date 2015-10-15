@@ -48,6 +48,8 @@ public class huiyuandengluActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.huiyuandenglu);
+		AppManager.getAppManager().addActivity(huiyuandengluActivity.this);
+
 		rg1 = (RadioGroup) this.findViewById(R.id.rg1);
 		rb1 = (RadioButton) this.findViewById(R.id.rb1);
 		rb2 = (RadioButton) this.findViewById(R.id.rb2);

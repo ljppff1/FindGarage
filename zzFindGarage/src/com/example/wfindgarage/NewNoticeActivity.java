@@ -74,6 +74,8 @@ public class NewNoticeActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.newnotice);
+		AppManager.getAppManager().addActivity(NewNoticeActivity.this);
+
 		mIvtt1 =(ImageView)this.findViewById(R.id.mIvtt1);
 		mIvtt1.setOnClickListener(listener);
 		mLv1 =(com.example.view.MyListView)this.findViewById(R.id.mLv1);

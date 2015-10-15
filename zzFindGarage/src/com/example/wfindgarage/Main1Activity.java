@@ -34,6 +34,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -54,7 +55,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout.LayoutParams;
 import com.example.view.pager.*;
-public class Main1Activity extends Activity {
+public class Main1Activity extends BaseActivity {
 	
 
 
@@ -100,6 +101,7 @@ public class Main1Activity extends Activity {
 	};
 	private com.example.view.pager.CycleViewPager cycleViewPager;
 	private List<com.example.view.pager.ADInfo> infos = new ArrayList<com.example.view.pager.ADInfo>();
+	private long exitTime=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,7 +114,25 @@ public class Main1Activity extends Activity {
     private void downloadnavigation() {
 		new DownLoadAsyTask1().execute("http://josie.i3.com.hk/FG/json/photolist.php?ct=1");
 	}
-    
+
+	
+	@Override
+	public boolean dispatchKeyEvent(KeyEvent event) {
+		if(event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_BACK){
+			if((System.currentTimeMillis() - exitTime) > 2000){
+				Toast.makeText(getApplicationContext(), R.string.ze25, 1).show();
+				exitTime = System.currentTimeMillis();
+				}else{
+				AppManager.getAppManager().AppExit(getApplicationContext());
+					android.os.Process.killProcess(android.os.Process.myPid());
+				}
+			return true;
+			}
+		return false;
+		}
+	
+	
+	
     class DownLoadAsyTask1 extends AsyncTask<String, Void, String>{  
 		@Override
 		protected void onPostExecute(String result) {

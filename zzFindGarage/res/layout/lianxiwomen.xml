@@ -222,6 +222,40 @@
                           
                           
      </LinearLayout>
+     
+   <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:id="@+id/mRlzz1"
+        android:visibility="gone"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            
+            >
+            <View 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                />
+            <View 
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:background="@color/mycolor11"
+                android:layout_height="fill_parent"
+                />
+                        <View 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                />
+            </LinearLayout>
+        
+        </RelativeLayout>
+
+        
         </RelativeLayout>
       
         
@@ -246,6 +280,8 @@
             android:textSize="25sp"
             android:drawableBottom="@drawable/ttb4"
             android:text="@string/bz1"
+             android:id="@+id/mTvfjc1"
+            
             android:textColor="@color/white"
             />
     </RelativeLayout>

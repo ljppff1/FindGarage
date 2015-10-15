@@ -66,6 +66,8 @@ public class fujinchefangActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.fujinchefang);
+		AppManager.getAppManager().addActivity(fujinchefangActivity.this);
+
 		rg1 = (RadioGroup) this.findViewById(R.id.rg1);
 		rb1 = (RadioButton) this.findViewById(R.id.rb1);
 		rb2 = (RadioButton) this.findViewById(R.id.rb2);
@@ -323,6 +325,9 @@ public class fujinchefangActivity extends FragmentActivity {
 			
 		};
 	};
+	
+	
+	
 	
 	class Holder{
 		TextView mTvil82;

@@ -203,7 +203,16 @@
 <string name="ze17">請輸入評論標題</string>
 <string name="ze18">請輸入評論內容</string>
 <string name="ze19">添加圖片</string>
+<string name="ze21">請輸入評論評分</string>
+
 <string name="ze20">最多上傳三張圖片，可點擊刪除已選擇的圖片！</string>
+<string name="ze22">請輸入車房名稱</string>
+<string name="ze23">請輸入車房內容</string>
+<string name="ze24">車房內容</string>
 
-
+        <string name="ze25">再按一次退出程序</string>
+        <string name="ze26">正在上传，请稍后..</string>
+        <string name="ze27">评论图片</string>
+        <string name="ze28">请输入评论内容</string>
+        
 </resources>

@@ -40,7 +40,7 @@
     <RelativeLayout 
         android:layout_width="fill_parent"
         android:layout_height="45dp"
-          android:layout_marginTop="40dp"
+          android:layout_marginTop="50dp"
           android:background="@color/myradio2"
         >
         <TextView 
@@ -59,7 +59,7 @@
         <RelativeLayout 
     android:layout_width="fill_parent"
     android:layout_height="50dp"
-    android:background="@drawable/ttb5"
+    android:background="@drawable/ab8"
     >
          <ImageView
        android:layout_width="34dp"
@@ -92,8 +92,8 @@
                     android:layout_width="wrap_content"
         android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:textSize="25sp"
-            android:drawableBottom="@drawable/ttb4"
             android:text="@string/b7"
             android:textColor="@color/white"
             />

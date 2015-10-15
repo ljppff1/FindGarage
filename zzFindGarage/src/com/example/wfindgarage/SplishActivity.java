@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 
-public class SplishActivity extends Activity {
+public class SplishActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

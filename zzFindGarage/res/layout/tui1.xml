@@ -1,0 +1,67 @@
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+         xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        >
+
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="40dp"
+            >
+         <ListView 
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:id="@+id/mLv1"
+          android:divider="@null" 
+     
+     ></ListView>
+            <ProgressBar
+            android:id="@+id/progressBar_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/ttb5"
+    >
+         <ImageView
+       android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:id="@+id/mIvtt1"
+         android:src="@drawable/ee1"
+         android:layout_centerVertical="true"
+         android:paddingLeft="5dp"
+             />
+        <ImageView
+       android:layout_width="34dp"
+        android:layout_height="34dp"
+         android:src="@drawable/ee2"
+         android:visibility="gone"
+         android:paddingRight="5dp"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+       
+             />
+        
+        <TextView 
+            android:id="@+id/mTvfjc1"
+                    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:drawableBottom="@drawable/ttb4"
+            android:text="@string/bz11"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    
+</RelativeLayout>

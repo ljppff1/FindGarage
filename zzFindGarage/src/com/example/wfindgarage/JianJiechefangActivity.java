@@ -32,6 +32,8 @@ public class JianJiechefangActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.jianjiechefangtest);
+		AppManager.getAppManager().addActivity(JianJiechefangActivity.this);
+
 		mIvtt1 =(ImageView)this.findViewById(R.id.mIvtt1);
 		mIvtt1.setOnClickListener(listener);
 

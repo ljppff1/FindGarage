@@ -74,7 +74,7 @@
          android:layout_width="0dp"
          android:layout_weight="2"
          android:textSize="13sp"
-         
+         android:id="@+id/mEtw1"
          android:paddingRight="4dp"
          android:textColor="@color/black"
          android:layout_gravity="center_vertical"
@@ -130,6 +130,7 @@
      android:layout_height="wrap_content"
      android:paddingTop="18dp"
      android:paddingBottom="18dp"
+     android:id="@+id/mLLwhat1"
      android:background="@color/myloginb"
      >
      <TextView 
@@ -140,46 +141,7 @@
          android:textColor="@color/black"
          android:layout_gravity="center"
          android:layout_marginLeft="4dp"
-         android:text="@string/bc8"
-         />
-     <EditText 
-         android:layout_width="0dp"
-         android:layout_weight="2"
-         android:textSize="13sp"
-         
-         android:paddingRight="4dp"
-         android:layout_gravity="center_vertical"
-         android:gravity="right"
-                  android:textColor="@color/black"
-         
-         android:layout_height="wrap_content"
-         android:hint="@string/ze3"
-         />
- </LinearLayout>
-  <View 
-     android:layout_width="fill_parent"
-     android:layout_height="0.5dp"
-     android:background="@color/black"
-     />
-             
-             <LinearLayout
-     android:layout_width="fill_parent"
-     android:layout_height="wrap_content"
-     android:paddingTop="18dp"
-     android:paddingBottom="18dp"
-          android:id="@+id/mWhatbad"
-     
-     android:background="@color/myloginb"
-     >
-          <TextView 
-         android:layout_width="0dp"
-         android:layout_weight="1.3"
-         android:layout_height="wrap_content"
-         android:textSize="22sp"
-         android:textColor="@color/black"
-         android:layout_gravity="center"
-         android:layout_marginLeft="4dp"
-         android:text="@string/ze2"
+         android:text="@string/ze15"
          />
      <TextView 
          android:layout_width="0dp"
@@ -191,13 +153,14 @@
          android:drawableRight="@drawable/bd2"
          android:layout_height="wrap_content"
          />
-
  </LinearLayout>
   <View 
      android:layout_width="fill_parent"
      android:layout_height="0.5dp"
      android:background="@color/black"
      />
+             
+
              
  <LinearLayout
      android:layout_width="fill_parent"
@@ -289,7 +252,71 @@
         </RelativeLayout>
       
         
-        <RelativeLayout 
+        
+        
+        
+        
+   <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:id="@+id/mRlzz1"
+        android:visibility="gone"
+        android:layout_marginTop="40dp"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            
+            >
+            <View 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                />
+            <View 
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:background="@color/mycolor11"
+                android:layout_height="fill_parent"
+                />
+                        <View 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                />
+            </LinearLayout>
+        
+        </RelativeLayout>
+
+        
+        
+        
+        
+    </RelativeLayout>
+    
+    
+      
+            
+            
+            
+</LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+ <ProgressBar
+            android:id="@+id/progressBar_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+       
+
+<RelativeLayout 
     android:layout_width="fill_parent"
     android:layout_height="50dp"
     android:background="@drawable/ttb5"
@@ -315,27 +342,11 @@
                     android:layout_width="wrap_content"
         android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:textSize="25sp"
+            android:textSize="25sp" android:id="@+id/mTvfjc1"
             android:drawableBottom="@drawable/ttb4"
             android:text="@string/b3"
             android:textColor="@color/white"
             />
-    </RelativeLayout>
         
     </RelativeLayout>
-    
-    
-      
-            
-            
-            
-</LinearLayout>
-</ScrollView>
-
-
-
-
-
-
-
 </RelativeLayout>

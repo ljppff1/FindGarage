@@ -92,7 +92,8 @@
                       android:textColor="@color/red"
                       android:layout_gravity="center"
                       android:layout_marginLeft="15dp"
-                                            android:textSize="20sp"
+                                           android:textSize="20sp"
+                                           android:id="@+id/mljt1"
                       
                       />
                   <ImageView 
@@ -112,6 +113,7 @@
                                             android:layout_marginLeft="15dp"
                                             android:textSize="20sp"
                       
+                                                                 android:id="@+id/mljt2"
                       
                       android:text="@string/af13"
                       />

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mLayout"
+    >
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="42.5dp"
+        android:id="@+id/mV2"
+        />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/mV3"
+        android:layout_alignParentBottom="true"
+        />
+    
+    
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:background="@color/white"
+       android:layout_below="@id/mV2"
+       android:layout_above="@id/mV3"
+       >
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/mEtp1"
+        />
+         
+    
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mEtp1"
+ android:divider="@color/black"  
+    android:dividerHeight="1px"
+            android:id="@+id/mLvp1"
+        ></ListView>
+    <ProgressBar
+            android:id="@+id/progressBar_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+   
+</RelativeLayout>
