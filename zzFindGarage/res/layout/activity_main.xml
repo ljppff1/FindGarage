@@ -38,6 +38,7 @@
      android:layout_height="38dp"
      android:background="@color/white"
      android:layout_marginTop="3dp"
+     android:id="@+id/mRlw1"
            	android:layout_marginRight="10dp"
       	android:layout_marginLeft="10dp"
      
@@ -56,6 +57,7 @@
        android:textColor="@color/gray1"
        android:text="@string/ab1a"
        android:textSize="18sp"
+       android:id="@+id/mTv11"
                 android:layout_centerVertical="true"
        android:layout_toRightOf="@id/mIva1"
        />

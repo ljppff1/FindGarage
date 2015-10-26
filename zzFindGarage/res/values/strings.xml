@@ -214,5 +214,9 @@
         <string name="ze26">正在上传，请稍后..</string>
         <string name="ze27">评论图片</string>
         <string name="ze28">请输入评论内容</string>
-        
+<string name="y1">评论详情</string>
+<string name="y2">评论标题</string>
+<string name="y3">评论内容</string>
+    <string name="search33">搜索</string>
+
 </resources>

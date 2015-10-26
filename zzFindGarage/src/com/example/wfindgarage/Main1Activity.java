@@ -224,6 +224,7 @@ public class Main1Activity extends BaseActivity {
 		}
 
 	};
+	private TextView mTv11;
 
  /*   
     private void downloadnavigation() {
@@ -556,7 +557,25 @@ public class Main1Activity extends BaseActivity {
 	
 	
     }
+    OnClickListener listener =new OnClickListener() {
+		
+		@Override
+		public void onClick(View v) {
+			switch (v.getId()) {
+			case R.id.mRlw1:
+           startActivity(new Intent(getApplicationContext(), com.example.testsearch.TFSearchActivity.class));
+				break;
+
+			default:
+				break;
+			}
+		}
+	};
+	private RelativeLayout mRlw1;
 	private void initView() {
+		mRlw1 =(RelativeLayout)this.findViewById(R.id.mRlw1);
+		mRlw1.setOnClickListener(listener);
+		
 	/*	myPager = (MyImgScroll)this. findViewById(R.id.myvp);
 		ovalLayout = (LinearLayout) this. findViewById(R.id.vb);
 		InitViewPager();//³õÊ¼»¯Í¼Æ¬

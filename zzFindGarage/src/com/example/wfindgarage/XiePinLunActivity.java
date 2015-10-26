@@ -271,6 +271,7 @@ private Handler handler =new Handler(){
 			 int  num_code=Integer.valueOf(string_code);
 			 if (num_code==1) {
 			 Toast.makeText(getApplicationContext(), msg1, 1).show();
+			 AppManager.getAppManager().finishActivity();
 			 }else{
 				 Toast.makeText(getApplicationContext(), msg1, 1).show();
 

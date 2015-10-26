@@ -744,7 +744,15 @@ private Handler handler =new Handler();
 										  Datap  data=new Datap();
 										 JSONObject jsonObject2 = array.getJSONObject(i);
 											
-										 
+										 data.CommentTitle=jsonObject2.getString("CommentTitle");
+										 data.CommentDetail=jsonObject2.getString("CommentDetail");
+										 data.CommentScore=jsonObject2.getString("CommentScore");
+										 data.CommentScore1=jsonObject2.getString("CommentScore1");
+										 data.CommentScore2=jsonObject2.getString("CommentScore2");
+										 data.CommentScore3=jsonObject2.getString("CommentScore3");
+										 data.CommentScore4=jsonObject2.getString("CommentScore4");
+										 data.GaragePhoto=jsonObject2.getString("GaragePhoto");
+
 										 data.CommentTitle= jsonObject2.getString("CommentTitle");
 										 data.CommentDetail= jsonObject2.getString("CommentDetail");
 										 data.CommentDate= jsonObject2.getString("CommentDate");
@@ -779,6 +787,17 @@ private Handler handler =new Handler();
 					@Override
 					public void onItemClick(AdapterView<?> parent,
 							View view, int position, long id) {
+						
+						Intent intent =new Intent(getApplicationContext(), NewDiscussXiangqing.class);
+						intent.putExtra("CommentTitle", mDataList_originp.get(position).CommentTitle);
+						intent.putExtra("CommentDetail", mDataList_originp.get(position).CommentDetail);
+						intent.putExtra("CommentScore", mDataList_originp.get(position).CommentScore);
+						intent.putExtra("CommentScore1", mDataList_originp.get(position).CommentScore1);
+						intent.putExtra("CommentScore2", mDataList_originp.get(position).CommentScore2);
+						intent.putExtra("CommentScore3", mDataList_originp.get(position).CommentScore3);
+						intent.putExtra("CommentScore4", mDataList_originp.get(position).CommentScore4);
+						startActivity(intent);
+
 					}
 				});
 			}
@@ -845,12 +864,16 @@ private Handler handler =new Handler();
 		class Datap{
 			String   ID;
 			String   CommentDate;
-			String   CommentTitle;
-			String   CommentDetail;
-			String   CommentScore;
-			String   CommentScore1;
 			String   CoverPic;
-			
+			String CommentTitle;
+			String CommentDetail;
+			String CommentScore;
+			String CommentScore1;
+			String CommentScore2;
+			String CommentScore3;
+			String CommentScore4;
+			String GaragePhoto;
+
 		}
 
 		
@@ -907,6 +930,9 @@ private Handler handler =new Handler();
 										initListViewpp();
 									  }
 								 else {
+									 progressBar_sale.setVisibility(View.GONE);
+									 Toast.makeText(getApplicationContext(), "ï∫üoœ‡ÍPÉ»»›", 0).show();
+
 								}
 							} catch (JSONException e) {
 							}

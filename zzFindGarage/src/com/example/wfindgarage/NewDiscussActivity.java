@@ -153,6 +153,17 @@ public class NewDiscussActivity extends FragmentActivity {
 									 data.AreaGross=jsonObject2.getString("CommentDetail");
 									 data.CoverPic=jsonObject2.getString("GaragePhoto");
 									 data.RentPrice =jsonObject2.getString("CommentDate");
+									 
+									 data.CommentTitle=jsonObject2.getString("CommentTitle");
+									 data.CommentDetail=jsonObject2.getString("CommentDetail");
+									 data.CommentScore=jsonObject2.getString("CommentScore");
+									 data.CommentScore1=jsonObject2.getString("CommentScore1");
+									 data.CommentScore2=jsonObject2.getString("CommentScore2");
+									 data.CommentScore3=jsonObject2.getString("CommentScore3");
+									 data.CommentScore4=jsonObject2.getString("CommentScore4");
+									 data.GaragePhoto=jsonObject2.getString("GaragePhoto");
+
+									 
 									 mDataList_origin.add(data);
 									 
 			                          data.toString();						 
@@ -160,7 +171,7 @@ public class NewDiscussActivity extends FragmentActivity {
 								  mDataList.clear();
 								  mDataList.addAll(mDataList_origin);
 								  mDataList1.addAll(mDataList);
-									progressBar_sale.setVisibility(View.GONE);
+								  progressBar_sale.setVisibility(View.GONE);
 								  initListView();
 							}
 							 else {
@@ -194,6 +205,17 @@ public class NewDiscussActivity extends FragmentActivity {
 				@Override
 				public void onItemClick(AdapterView<?> parent,
 						View view, int position, long id) {
+					Intent intent =new Intent(getApplicationContext(), NewDiscussXiangqing.class);
+					intent.putExtra("CommentTitle", mDataList1.get(position).CommentTitle);
+					intent.putExtra("CommentDetail", mDataList1.get(position).CommentDetail);
+					intent.putExtra("CommentScore", mDataList1.get(position).CommentScore);
+					intent.putExtra("CommentScore1", mDataList1.get(position).CommentScore1);
+					intent.putExtra("CommentScore2", mDataList1.get(position).CommentScore2);
+					intent.putExtra("CommentScore3", mDataList1.get(position).CommentScore3);
+					intent.putExtra("CommentScore4", mDataList1.get(position).CommentScore4);
+					startActivity(intent);
+
+					
 				}
 			});
 		}
@@ -236,7 +258,7 @@ public class NewDiscussActivity extends FragmentActivity {
 			if(mDataList.get(position).StreetName.equals("1")){
 				holder.mIvll3.setImageResource(R.drawable.bba1);
 			}
-			if(mDataList.get(position).StreetName.equals("-1")){
+			if(mDataList.get(position).StreetName.equals("0")){
 				holder.mIvll3.setImageResource(R.drawable.ok2);
 			}
 			holder.mTvri12.setText(mDataList1.get(position).Name);
@@ -273,7 +295,15 @@ public class NewDiscussActivity extends FragmentActivity {
 		String   SellingPrice;
 		String   RentPrice;
 		String   CoverPic;
-		
+		String GarageTitle;
+		String CommentTitle;
+		String CommentDetail;
+		String CommentScore;
+		String CommentScore1;
+		String CommentScore2;
+		String CommentScore3;
+		String CommentScore4;
+		String GaragePhoto;
 	}
 
 	   

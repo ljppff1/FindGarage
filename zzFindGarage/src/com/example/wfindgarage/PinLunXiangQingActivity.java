@@ -220,7 +220,7 @@ public class PinLunXiangQingActivity extends BaseActivity {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmssSSS");
 		String name = formatter.format(System.currentTimeMillis()) + ".jpg";
 		Log.i("zhiwei.zhao", "image name:" + name);
-		Toast.makeText(this, name, Toast.LENGTH_LONG).show();
+		//Toast.makeText(this, name, Toast.LENGTH_LONG).show();
 		Bundle bundle = data.getExtras();
 		/* 获取相机返回的数据，并转换为Bitmap图片格式 */
 		Bitmap bitmap = (Bitmap) bundle.get("data");
