@@ -10,28 +10,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.example.fragment.FragmentCheFang;
-import com.example.fragment.FragmentCheFang1;
-import com.example.fragment.FragmentCheFang2;
-import com.example.fragment.FragmentLogin;
-import com.example.fragment.FragmentRegister;
-import com.example.view.MyGridView;
-import com.example.view.MyListView;
-import com.example.wfindgarage.NewDiscussActivity.Data;
-import com.example.wfindgarage.NewDiscussActivity.Holder;
-import com.example.wfindgarage.NewDiscussActivity.Myadapter;
-import com.example.wfindgarage.huiyuandengluActivity.ZxzcAdapter;
-import com.lidroid.xutils.HttpUtils;
-import com.lidroid.xutils.exception.HttpException;
-import com.lidroid.xutils.http.RequestParams;
-import com.lidroid.xutils.http.ResponseInfo;
-import com.lidroid.xutils.http.callback.RequestCallBack;
-import com.lidroid.xutils.http.client.HttpRequest;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
-
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -41,27 +19,22 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.View.OnKeyListener;
-import android.view.Window;
 import android.view.View.OnClickListener;
+import android.view.View.OnKeyListener;
 import android.view.View.OnTouchListener;
+import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -69,11 +42,22 @@ import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.RadioGroup.OnCheckedChangeListener;
+
+import com.example.view.MyGridView;
+import com.example.view.MyListView;
+import com.lidroid.xutils.HttpUtils;
+import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.RequestParams;
+import com.lidroid.xutils.http.ResponseInfo;
+import com.lidroid.xutils.http.callback.RequestCallBack;
+import com.lidroid.xutils.http.client.HttpRequest;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
 public class chefangActivity extends FragmentActivity {
 
@@ -439,9 +423,17 @@ public class chefangActivity extends FragmentActivity {
         	     }
 				break;
 			case R.id.mIvwww1:
+		         
+
 				break;
 				
-			case R.id.mRlpw1:				
+			case R.id.mRlpw1:
+		         intent=new Intent(Intent.ACTION_SEND); 
+		         intent.setType("text/plain"); 
+		         intent.putExtra(Intent.EXTRA_SUBJECT, "∑÷œÌ"); 
+		         intent.putExtra(Intent.EXTRA_TEXT,  "FindGarage");  
+		         startActivity(Intent.createChooser(intent, "∑÷œÌµΩ")); 
+
 				break;
 			default:
 				break;

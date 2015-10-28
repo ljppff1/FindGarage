@@ -279,7 +279,7 @@ private Handler handler =new Handler(){
 	    }catch (Exception e) {
 
 	    }
-
+		 Looper.getMainLooper().loop();
      default:
      break;
 }
